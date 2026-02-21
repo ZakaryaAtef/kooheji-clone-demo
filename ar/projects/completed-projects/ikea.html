@@ -1,2618 +1,383 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-<head>
-<!-- Required meta tags -->
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="/assets/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="/assets/plugins/slick/slick.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="/assets/plugins/slick/slick-theme.css"
+    />
+    <link rel="stylesheet" type="text/css" href="/assets/css/style.css" />
 
-<!-- Bootstrap CSS -->
-<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-<link rel="stylesheet" type="text/css" href="../../assets/css/bootstrap.min.css">
-<link rel="stylesheet" type="text/css" href="../../assets/plugins/slick/slick.css"/>
-<link rel="stylesheet" type="text/css" href="../../assets/plugins/slick/slick-theme.css"/>
-<link rel="stylesheet" type="text/css" href="../../assets/css/style.css">
+    <link rel="stylesheet" type="text/css" href="/assets/css/arabic.css" />
 
-<link rel="stylesheet" type="text/css" href="../../assets/css/arabic.css" />
+    <title>Kooheji</title>
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="/assets/img/kooheji_logo.jpg"
+    />
 
-<title>Kooheji</title>
-<link rel="icon" type="image/x-icon" href="../../assets/img/kooheji_logo.jpg">
+    <meta name="title" content="Kooheji" />
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
 
-<meta name="title" content="Kooheji">
-<meta name="description" content="">
-<meta name="keywords" content="">
-
-<!-- Google Tag Manager -->
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-    'https://www.googletagmanager.com/gtm5445.html?id='+i+dl;f.parentNode.insertBefore(j,f);
-    })(window,document,'script','dataLayer','GTM-TLD33PH');</script>
+    <!-- Google Tag Manager -->
+    <script>
+      (function (w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
+        var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s),
+          dl = l != "dataLayer" ? "&l=" + l : "";
+        j.async = true;
+        j.src = "https://www.googletagmanager.com/gtm5445.html?id=" + i + dl;
+        f.parentNode.insertBefore(j, f);
+      })(window, document, "script", "dataLayer", "GTM-TLD33PH");
+    </script>
     <!-- End Google Tag Manager -->
 
-<!--<script>var chatbot_id=18793;!function(){var t,e,a=document,s="smatbot-chatbot";a.getElementById(s)||(t=a.createElement("script"),t.id=s,t.type="text/javascript",t.src="https://smatbot.s3.amazonaws.com/files/smatbot_plugin.js.gz",e=a.getElementsByTagName("script")[0],e.parentNode.insertBefore(t,e))}();</script><script src="https://cdnjs.cloudflare.com/ajax/libs/fingerprintjs2/1.5.1/fingerprint2.min.js"></script>-->
-<script>var chatbot_id=18793;!function(){var t,e,a=document,s="smatbot-chatbot";a.getElementById(s)||(t=a.createElement("script"),t.id=s,t.type="text/javascript",t.src="https://smatbot.s3.amazonaws.com/files/smatbot_plugin.js.gz",e=a.getElementsByTagName("script")[0],e.parentNode.insertBefore(t,e))}();</script><script src="https://cdnjs.cloudflare.com/ajax/libs/fingerprintjs2/1.5.1/fingerprint2.min.js"></script>
-</head>
-<body>
-
+    <!--<script>var chatbot_id=18793;!function(){var t,e,a=document,s="smatbot-chatbot";a.getElementById(s)||(t=a.createElement("script"),t.id=s,t.type="text/javascript",t.src="https://smatbot.s3.amazonaws.com/files/smatbot_plugin.js.gz",e=a.getElementsByTagName("script")[0],e.parentNode.insertBefore(t,e))}();</script><script src="https://cdnjs.cloudflare.com/ajax/libs/fingerprintjs2/1.5.1/fingerprint2.min.js"></script>-->
+    <script>
+      var chatbot_id = 18793;
+      !(function () {
+        var t,
+          e,
+          a = document,
+          s = "smatbot-chatbot";
+        a.getElementById(s) ||
+          ((t = a.createElement("script")),
+          (t.id = s),
+          (t.type = "text/javascript"),
+          (t.src =
+            "https://smatbot.s3.amazonaws.com/files/smatbot_plugin.js.gz"),
+          (e = a.getElementsByTagName("script")[0]),
+          e.parentNode.insertBefore(t, e));
+      })();
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fingerprintjs2/1.5.1/fingerprint2.min.js"></script>
+  </head>
+  <body>
     <!-- Google Tag Manager (noscript) -->
-    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TLD33PH"
-    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <noscript
+      ><iframe
+        src="https://www.googletagmanager.com/ns.html?id=GTM-TLD33PH"
+        height="0"
+        width="0"
+        style="display: none; visibility: hidden"
+      ></iframe
+    ></noscript>
     <!-- End Google Tag Manager (noscript) -->
 
-<nav class="navbar navbar-expand-lg for_Ddesktop">
-      <div class="container">
-        <a class="navbar-brand" href="../../index.html">
-          <img src="../../assets/img/logo.png" class="img-fluid" alt="logo" width="201">
-        </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main_nav" aria-expanded="false" aria-label="Toggle navigation">
-          <div class="ham_icon" onclick="myFunction(this)">
-            <div class="bar1"></div>
-            <div class="bar2"></div>
-            <div class="bar3"></div>
-          </div>
-        </button>
-        <div class="collapse navbar-collapse" id="main_nav">
-          <div class="mega_menu ms-auto">
+    <div id="common-header"></div>
+    <script>
+      fetch("/ar/components/header.html")
+        .then((r) => r.text())
+        .then((t) => {
+          const el = document.getElementById("common-header");
+          if (el) el.outerHTML = t;
+        });
+    </script>
 
-                        <ul class="main_menu navbar-nav">
-                                    <li class="has_child nav-item has-megamenu active">
-                        <a class="nav-link dropdown-toggle" href="javascript:void(0)">نبذة عنا</a>
-                        <div class="sub_menu4 child_menu">
-                            <div class="container">
-                            <div class="row g-0">
-                                <div class="col-12 col-lg-4">
-                                <div class="head">
-                                    <h3>نبذة عنا</h3>
-                                </div>
-                                </div>
-                                <div class="col-12 col-lg-6 offset-lg-1 offset-0 col-xxl-6 offset-xxl-2">
-                                                                    <style>
-        .cust-mobile-link span{
-            display: no ;
-        }
-        .sub_menu4{ min-height: 295px; }
-        @media  screen and (max-width: 991px){
-            .cust-mobile-link{
-                display: flex;
-                align-items: flex-start;
-                justify-content: space-between;
-            }
-            .cust-mobile-link span{
-                display: inline-block;
-                font-size: 20px;
-                color: #455560;
-            }
-        }
-    </style>
-
-                <ul class="sub_menu_a our-expertise">
-                                    <li>
-                                    <a href="../../about-us/about-kooheji-contractors.html"    >عن شركة الكوهجي للمقاولات</a>
-                                
-                
-                            </li>
-                                <li>
-                                    <a href="../../about-us/vision-and-mission.html"    >الرؤية والمهام والقيّم</a>
-                                
-                
-                            </li>
-                                <li>
-                                    <a href="../../about-us/directors-message.html"    >كلمة  رئيس مجلس الإدارة</a>
-                                
-                
-                            </li>
-                                <li>
-                                    <a href="../../about-us/our-culture.html"    >ثقافتنا</a>
-                                
-                
-                            </li>
-                                <li>
-                                    <a href="../../about-us/our-priorities.html"    >أولوياتنا</a>
-                                
-                
-                            </li>
-                                <li>
-                                    <div class="cust-mobile-link">
-                        <a href="#"    >الشركاء</a>
-                        
-                        <span><i class="fas fa-angle-down"></i></span>
-                        
-                    </div>
-                                
-                
-                                                        <style>
-        .cust-mobile-link span{
-            display: none;
-        }
-        @media  screen and (max-width: 991px){
-            .cust-mobile-link{
-                display: flex;
-                align-items: flex-start;
-                justify-content: space-between;
-            }
-            .cust-mobile-link span{
-                display: inline-block;
-                font-size: 20px;
-                color: #455560;
-            }
-        }
-    </style>
-
-                <ul class="sub_submenu">
-    
-    
-
-                    <li>
-                                                    <a href="../../about-us/partners/subsidiaries.html"    >الشركات التابعة</a>
-                                
-                
-                            </li>
-                    <li>
-                                                    <a href="../../about-us/partners/majority-shareholding.html"    >مساهمة الأغلبية</a>
-                                
-                
-                            </li>
-                    <li>
-                                                    <a href="../../about-us/partners/investment-companies.html"    >شركات الاستثمار</a>
-                                
-                
-                            </li>
-                    <li>
-                                                    <a href="../../about-us/partners/equal-shareholding.html"    >مساهمة متساوية</a>
-                                
-                
-                            </li>
-            </ul>
-                            </li>
-            </ul>
-                                                                </div>
-                            </div>
-                            </div>
-                        </div>
-                    </li>
-                                    <li class="has_child nav-item has-megamenu active">
-                        <a class="nav-link dropdown-toggle" href="javascript:void(0)">موظفونا</a>
-                        <div class="sub_menu4 child_menu">
-                            <div class="container">
-                            <div class="row g-0">
-                                <div class="col-12 col-lg-4">
-                                <div class="head">
-                                    <h3>موظفونا</h3>
-                                </div>
-                                </div>
-                                <div class="col-12 col-lg-6 offset-lg-1 offset-0 col-xxl-6 offset-xxl-2">
-                                                                    <style>
-        .cust-mobile-link span{
-            display: no ;
-        }
-        .sub_menu4{ min-height: 295px; }
-        @media  screen and (max-width: 991px){
-            .cust-mobile-link{
-                display: flex;
-                align-items: flex-start;
-                justify-content: space-between;
-            }
-            .cust-mobile-link span{
-                display: inline-block;
-                font-size: 20px;
-                color: #455560;
-            }
-        }
-    </style>
-
-                <ul class="sub_menu_a">
-                                    <li>
-                                    <a href="../../people/our-leadership.html#boardOfdirector"    >أعضاء مجلس الإدارة</a>
-                                
-                
-                            </li>
-                                <li>
-                                    <a href="../../people/our-leadership.html#chiefOfficers"    >رؤساء القطاعات</a>
-                                
-                
-                            </li>
-            </ul>
-                                                                </div>
-                            </div>
-                            </div>
-                        </div>
-                    </li>
-                                    <li class="has_child nav-item has-megamenu active">
-                        <a class="nav-link dropdown-toggle" href="javascript:void(0)">خبرتنا</a>
-                        <div class="sub_menu4 child_menu">
-                            <div class="container">
-                            <div class="row g-0">
-                                <div class="col-12 col-lg-4">
-                                <div class="head">
-                                    <h3>خبرتنا</h3>
-                                </div>
-                                </div>
-                                <div class="col-12 col-lg-6 offset-lg-1 offset-0 col-xxl-6 offset-xxl-2">
-                                                                    <style>
-        .cust-mobile-link span{
-            display: no ;
-        }
-        .sub_menu4{ min-height: 295px; }
-        @media  screen and (max-width: 991px){
-            .cust-mobile-link{
-                display: flex;
-                align-items: flex-start;
-                justify-content: space-between;
-            }
-            .cust-mobile-link span{
-                display: inline-block;
-                font-size: 20px;
-                color: #455560;
-            }
-        }
-    </style>
-
-                <ul class="sub_menu_a expertize">
-                                    <li>
-                                    <a href="../../our-expertise/project-management-and-design.html"    >إدارة المشاريع والتصميم</a>
-                                
-                
-                            </li>
-                                <li>
-                                    <div class="cust-mobile-link">
-                        <a href="../../our-expertise/construction.html"    >الإنشاءات</a>
-                        
-                        <span><i class="fas fa-angle-down"></i></span>
-                        
-                    </div>
-                                
-                
-                                                        <style>
-        .cust-mobile-link span{
-            display: none;
-        }
-        @media  screen and (max-width: 991px){
-            .cust-mobile-link{
-                display: flex;
-                align-items: flex-start;
-                justify-content: space-between;
-            }
-            .cust-mobile-link span{
-                display: inline-block;
-                font-size: 20px;
-                color: #455560;
-            }
-        }
-    </style>
-
-                <ul class="sub_submenu">
-    
-    
-
-                    <li>
-                                                    <a href="../../our-expertise/construction/commercial-and-residential-buildings.html"    >عمارات تجارية</a>
-                                
-                
-                            </li>
-                    <li>
-                                                    <a href="../../our-expertise/construction/urban-development.html"    >التطوير العمراني</a>
-                                
-                
-                            </li>
-                    <li>
-                                                    <a href="../../our-expertise/construction/high-rise-towers.html"    >الأبراج شاهقة الارتفاع</a>
-                                
-                
-                            </li>
-                    <li>
-                                                    <a href="../../our-expertise/construction/industrial.html"    >صناعي</a>
-                                
-                
-                            </li>
-                    <li>
-                                                    <a href="../../our-expertise/construction/healthcare-projects.html"    >الرعاية الصحية</a>
-                                
-                
-                            </li>
-                    <li>
-                                                    <a href="../../our-expertise/construction/government-and-educational-projects.html"    >الحكومة والتعليم</a>
-                                
-                
-                            </li>
-            </ul>
-                            </li>
-                                <li>
-                                    <div class="cust-mobile-link">
-                        <a href="#"    >الأقسام</a>
-                        
-                        <span><i class="fas fa-angle-down"></i></span>
-                        
-                    </div>
-                                
-                
-                                                        <style>
-        .cust-mobile-link span{
-            display: none;
-        }
-        @media  screen and (max-width: 991px){
-            .cust-mobile-link{
-                display: flex;
-                align-items: flex-start;
-                justify-content: space-between;
-            }
-            .cust-mobile-link span{
-                display: inline-block;
-                font-size: 20px;
-                color: #455560;
-            }
-        }
-    </style>
-
-                <ul class="sub_submenu">
-    
-    
-
-                    <li>
-                                                    <div class="cust-mobile-link">
-                        <a href="../../our-expertise/divisions/interior-design.html"    >كوهجي انتريورز</a>
-                        
-                        <span><i class="fas fa-angle-down"></i></span>
-                        
-                    </div>
-                                
-                
-                                                        <style>
-        .cust-mobile-link span{
-            display: none;
-        }
-        @media  screen and (max-width: 991px){
-            .cust-mobile-link{
-                display: flex;
-                align-items: flex-start;
-                justify-content: space-between;
-            }
-            .cust-mobile-link span{
-                display: inline-block;
-                font-size: 20px;
-                color: #455560;
-            }
-        }
-    </style>
-
-                <ul class="sub_submenu">
-    
-    
-
-                    <li>
-                                                    <a href="../../our-expertise/divisions/interior-design/ki-canal-view.html"    >كنال فيو</a>
-                                
-                
-            </li>
-                    <li>
-                                                    <a href="../../our-expertise/divisions/interior-design/conrad-hotel.html"    >فندق كونراد</a>
-                                
-                
-            </li>
-                    <li>
-                                                    <a href="../../our-expertise/divisions/interior-design/seef-avenue.html"    >شارع السيف</a>
-                                
-                
-            </li>
-                    <li>
-                                                    <a href="../../our-expertise/divisions/interior-design/fontana-infinity.html"    >فونتانا إنفينيتي</a>
-                                
-                
-            </li>
-                    <li>
-                                                    <a href="../../our-expertise/divisions/interior-design/spring-hill-2.html"    >سبرينغ هيل 2</a>
-                                
-                
-            </li>
-                    <li>
-                                                    <a href="../../our-expertise/divisions/interior-design/springfield-suites.html"    >سبرينج فيلد سيف</a>
-                                
-                
-            </li>
-                    <li>
-                                                    <a href="../../our-expertise/divisions/interior-design/fontana-gardens.html"    >فونتانا غاردنز</a>
-                                
-                
-            </li>
-                    <li>
-                                                    <a href="../../our-expertise/divisions/interior-design/fontana-suites.html"    >فونتانا سويتس</a>
-                                
-                
-            </li>
-                    <li>
-                                                    <a href="../../our-expertise/divisions/interior-design/ariva.html"    >أريفا</a>
-                                
-                
-            </li>
-                    <li>
-                                                    <a href="../../our-expertise/divisions/interior-design/onyx-bahrain-bay.html"    >أونيكس ريزيدنسز وأونيكس أرجان من روتانا</a>
-                                
-                
-            </li>
-            </ul>
-                            </li>
-                    <li>
-                                                    <div class="cust-mobile-link">
-                        <a href="../../our-expertise/divisions/joinery-factory.html"    >مصنع النجارة</a>
-                        
-                        <span><i class="fas fa-angle-down"></i></span>
-                        
-                    </div>
-                                
-                
-                                                        <style>
-        .cust-mobile-link span{
-            display: none;
-        }
-        @media  screen and (max-width: 991px){
-            .cust-mobile-link{
-                display: flex;
-                align-items: flex-start;
-                justify-content: space-between;
-            }
-            .cust-mobile-link span{
-                display: inline-block;
-                font-size: 20px;
-                color: #455560;
-            }
-        }
-    </style>
-
-                <ul class="sub_submenu">
-    
-    
-
-                    <li>
-                                                    <a href="../../our-expertise/divisions/joinery-factory/turnkey-fitout.html"    >أعمال التجهيز الشاملة</a>
-                                
-                
-            </li>
-                    <li>
-                                                    <a href="../../our-expertise/divisions/joinery-factory/retail-fixtures-fittings.html"    >تجهيزات قطاع التجزئة</a>
-                                
-                
-            </li>
-                    <li>
-                                                    <a href="../../our-expertise/divisions/joinery-factory/bespoke-furniture-hospitality-manufacturing.html"    >تصنيع الأثاث ومستلزمات الفنادق حسب الطلب</a>
-                                
-                
-            </li>
-                    <li>
-                                                    <a href="../../our-expertise/divisions/joinery-factory/kitchens-closets.html"    >المطابخ والخزائن</a>
-                                
-                
-            </li>
-            </ul>
-                            </li>
-                    <li>
-                                                    <a href="../../our-expertise/divisions/mechanical-factory.html"    >مصنع الأعمال الميكانيكية</a>
-                                
-                
-                            </li>
-            </ul>
-                            </li>
-            </ul>
-                                                                </div>
-                            </div>
-                            </div>
-                        </div>
-                    </li>
-                                    <li class="has_child nav-item has-megamenu active">
-                        <a class="nav-link dropdown-toggle" href="javascript:void(0)">مشاريعنا</a>
-                        <div class="sub_menu4 child_menu">
-                            <div class="container">
-                            <div class="row g-0">
-                                <div class="col-12 col-lg-4">
-                                <div class="head">
-                                    <h3>مشاريعنا</h3>
-                                </div>
-                                </div>
-                                <div class="col-12 col-lg-6 offset-lg-1 offset-0 col-xxl-6 offset-xxl-2">
-                                                                    <style>
-        .cust-mobile-link span{
-            display: no ;
-        }
-        .sub_menu4{ min-height: 295px; }
-        @media  screen and (max-width: 991px){
-            .cust-mobile-link{
-                display: flex;
-                align-items: flex-start;
-                justify-content: space-between;
-            }
-            .cust-mobile-link span{
-                display: inline-block;
-                font-size: 20px;
-                color: #455560;
-            }
-        }
-    </style>
-
-                <ul class="sub_menu_a project">
-                                    <li>
-                                    <div class="cust-mobile-link">
-                        <a href="../completed-projects.html"    >المشاريع المنجزة</a>
-                        
-                        <span><i class="fas fa-angle-down"></i></span>
-                        
-                    </div>
-                                
-                
-                                                        <style>
-        .cust-mobile-link span{
-            display: none;
-        }
-        @media  screen and (max-width: 991px){
-            .cust-mobile-link{
-                display: flex;
-                align-items: flex-start;
-                justify-content: space-between;
-            }
-            .cust-mobile-link span{
-                display: inline-block;
-                font-size: 20px;
-                color: #455560;
-            }
-        }
-    </style>
-
-                <ul class="sub_submenu">
-    
-    
-
-                    <li>
-                                                    <a href="wadi-al-riffa-villas.html"    >وادي الرفاع</a>
-                                
-                
-                            </li>
-                    <li>
-                                                    <a href="lavent-villas.html"    >فلل لافنت</a>
-                                
-                
-                            </li>
-                    <li>
-                                                    <a href="springfield-suites-bh.html"    >سبرينغ فيلد سويتس</a>
-                                
-                
-                            </li>
-                    <li>
-                                                    <a href="king-hamad-university-hospital.html"    >مستشفى الملك حمد الجامعي</a>
-                                
-                
-                            </li>
-                    <li>
-                                                    <a href="bahrain-world-trade-center.html"    >مركز البحرين التجاري العالمي</a>
-                                
-                
-                            </li>
-                    <li>
-                                                    <a href="durrat-al-bahrain.html"    >درة البحرين</a>
-                                
-                
-                            </li>
-                    <li>
-                                                    <a href="sulb-steel-mill.html"    >مجمع الصلب</a>
-                                
-                
-                            </li>
-                    <li>
-                                                    <a href="calciner-plant.html"    >مجمع التكليس (ألبا)</a>
-                                
-                
-                            </li>
-                    <li>
-                                                    <a href="porta-reef.html"    >بورتا ريف</a>
-                                
-                
-                            </li>
-                    <li>
-                                                    <a href="ikea.html"    >ايكيا</a>
-                                
-                
-                            </li>
-                    <li>
-                                                    <a href="juffair-square.html"    >جفير سكويرJ</a>
-                                
-                
-                            </li>
-                    <li>
-                                                    <a href="marassi-boulevard.html"    >مراسي بوليفارد</a>
-                                
-                
-                            </li>
-                    <li>
-                                                    <a href="onyx-by-rotana.html"    >أونيكس ريزيدنسز وأونيكس أرجان من روتانا</a>
-                                
-                
-                            </li>
-                    <li>
-                                                    <a href="sayacorp-tower.html"    >ساياكورب - فندق كونراد</a>
-                                
-                
-                            </li>
-                    <li>
-                                                    <a href="canal-view.html"    >كنال فيو</a>
-                                
-                
-                            </li>
-                    <li>
-                                                    <a href="coast-guard.html"    >خفر السواحل</a>
-                                
-                
-                            </li>
-                    <li>
-                                                    <a href="complete-fontana-gardens.html"    >فونتانا غاردنز</a>
-                                
-                
-                            </li>
-                    <li>
-                                                    <a href="complete-fontana-suites.html"    >فونتانا سويتس</a>
-                                
-                
-                            </li>
-                    <li>
-                                                    <a href="catamaran.html"    >كتماران</a>
-                                
-                
-                            </li>
-                    <li>
-                                                    <a href="complete-seef-avenue.html"    >سيف أفينيو</a>
-                                
-                
-                            </li>
-                    <li>
-                                                    <a href="complete-ariva.html"    >أريفا</a>
-                                
-                
-                            </li>
-                    <li>
-                                                    <a href="complete-fontana-infinity.html"    >فونتانا إنفينيتي</a>
-                                
-                
-                            </li>
-            </ul>
-                            </li>
-                                <li>
-                                    <div class="cust-mobile-link">
-                        <a href="../ongoing-projects.html"    >مشاريع قيد التنفيذ</a>
-                        
-                        <span><i class="fas fa-angle-down"></i></span>
-                        
-                    </div>
-                                
-                
-                                                        <style>
-        .cust-mobile-link span{
-            display: none;
-        }
-        @media  screen and (max-width: 991px){
-            .cust-mobile-link{
-                display: flex;
-                align-items: flex-start;
-                justify-content: space-between;
-            }
-            .cust-mobile-link span{
-                display: inline-block;
-                font-size: 20px;
-                color: #455560;
-            }
-        }
-    </style>
-
-                <ul class="sub_submenu">
-    
-    
-
-                    <li>
-                                                    <a href="../ongoing-projects/seef-avenue-2.html"    >سيف أڤينيو ||</a>
-                                
-                
-                            </li>
-                    <li>
-                                                    <a href="../ongoing-projects/onyx-skyview.html"    >أونيكس سكاي ڤيو</a>
-                                
-                
-                            </li>
-                    <li>
-                                                    <a href="../ongoing-projects/seef-boulvard.html"    >سيف بوليڤارد</a>
-                                
-                
-                            </li>
-                    <li>
-                                                    <a href="../ongoing-projects/marassi-bay.html"    >مراسي بي</a>
-                                
-                
-                            </li>
-                    <li>
-                                                    <a href="../ongoing-projects/marassi-terraces.html"    >مراسي تيراس</a>
-                                
-                
-                            </li>
-                    <li>
-                                                    <a href="../ongoing-projects/lavira-tharwa.html"    >لافيرا ثروة</a>
-                                
-                
-                            </li>
-                    <li>
-                                                    <a href="../ongoing-projects/flamant-saudi.html"    >فلامنت</a>
-                                
-                
-                            </li>
-                    <li>
-                                                    <a href="../ongoing-projects/belgravia-saudi.html"    >بلغرافيا</a>
-                                
-                
-                            </li>
-                    <li>
-                                                    <a href="../ongoing-projects/kooheji-medical-complex.html"    >مجمع الكوهجي الطبي</a>
-                                
-                
-                            </li>
-            </ul>
-                            </li>
-            </ul>
-                                                                </div>
-                            </div>
-                            </div>
-                        </div>
-                    </li>
-                                    <li class="has_child nav-item has-megamenu active">
-                        <a class="nav-link dropdown-toggle" href="#">وسائل الإعلام</a>
-                        <div class="sub_menu4 child_menu">
-                            <div class="container">
-                            <div class="row g-0">
-                                <div class="col-12 col-lg-4">
-                                <div class="head">
-                                    <h3>وسائل الإعلام</h3>
-                                </div>
-                                </div>
-                                <div class="col-12 col-lg-6 offset-lg-1 offset-0 col-xxl-6 offset-xxl-2">
-                                                                    <style>
-        .cust-mobile-link span{
-            display: no ;
-        }
-        .sub_menu4{ min-height: 295px; }
-        @media  screen and (max-width: 991px){
-            .cust-mobile-link{
-                display: flex;
-                align-items: flex-start;
-                justify-content: space-between;
-            }
-            .cust-mobile-link span{
-                display: inline-block;
-                font-size: 20px;
-                color: #455560;
-            }
-        }
-    </style>
-
-                <ul class="sub_menu_a">
-                                    <li>
-                                    <a href="../../media/articles.html"    >أخبار</a>
-                                
-                
-                            </li>
-                                <li>
-                                    <a href="../../media/media-gallery.html"    >معرض الوسائط</a>
-                                
-                
-                            </li>
-                                <li>
-                                    <a href="../../media/downloads.html"    >التحميلات</a>
-                                
-                
-                            </li>
-                                <li>
-                                    <a href="../../../assets/img/Newsletter-OCT-2021.pdf"   target="_blank"   >النشرة الإخبارية</a>
-                                
-                
-                            </li>
-            </ul>
-                                                                </div>
-                            </div>
-                            </div>
-                        </div>
-                    </li>
-                                    <li class="has_child nav-item has-megamenu active">
-                        <a class="nav-link dropdown-toggle" href="javascript:void(0)">اتصل بنا</a>
-                        <div class="sub_menu4 child_menu">
-                            <div class="container">
-                            <div class="row g-0">
-                                <div class="col-12 col-lg-4">
-                                <div class="head">
-                                    <h3>اتصل بنا</h3>
-                                </div>
-                                </div>
-                                <div class="col-12 col-lg-6 offset-lg-1 offset-0 col-xxl-6 offset-xxl-2">
-                                                                    <style>
-        .cust-mobile-link span{
-            display: no ;
-        }
-        .sub_menu4{ min-height: 295px; }
-        @media  screen and (max-width: 991px){
-            .cust-mobile-link{
-                display: flex;
-                align-items: flex-start;
-                justify-content: space-between;
-            }
-            .cust-mobile-link span{
-                display: inline-block;
-                font-size: 20px;
-                color: #455560;
-            }
-        }
-    </style>
-
-                <ul class="sub_menu_a">
-                                    <li>
-                                    <a href="../../contact-us/get-in-touch.html"    >موقع</a>
-                                
-                
-                            </li>
-                                <li>
-                                    <a href="../../contact-us/get-in-touch.html#Joinery"    >مصنع النجارة والتجهيزات</a>
-                                
-                
-                            </li>
-                                <li>
-                                    <a href="../../contact-us/get-in-touch.html#Mechanical"    >ورشة ميكانيكية</a>
-                                
-                
-                            </li>
-                                <li>
-                                    <a href="../../contact-us/get-in-touch.html#Generalenq"    >استفسار عام</a>
-                                
-                
-                            </li>
-            </ul>
-                                                                </div>
-                            </div>
-                            </div>
-                        </div>
-                    </li>
-                            </ul>
-
-            
-
-                <!-- <li class="has_child nav-item has-megamenu">
-                  <a class="nav-link dropdown-toggle" href="javascript:void(0)">people</a>
-                  <div class="sub_menu2 child_menu">
-                    <div class="container">
-                      <div class="row g-0">
-                        <div class="col-12 col-lg-4">
-                          <div class="head">
-                            <h3>people</h3>
-                          </div>
-                        </div>
-                        <div class="col-12 col-lg-6 offset-lg-1 offset-0 col-xxl-6 offset-xxl-2">
-                          <ul class="sub_menu_a">
-                            <li><a href="#">Board of directors</a></li>
-                            <li><a href="#">chief officers</a></li>
-                            <li><a href="#">our people</a></li>
-                          </ul>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </li>
-                <li class="has_child nav-item has-megamenu">
-                  <a class="nav-link dropdown-toggle" href="javascript:void(0)">our expertise</a>
-                  <div class="sub_menu3 child_menu">
-                    <div class="container">
-                      <div class="row g-0">
-                        <div class="col-12 col-lg-4">
-                          <div class="head">
-                            <div>
-                              <h3>our<br>expertise</h3>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="col-12 col-lg-6 offset-lg-1 offset-0 col-xxl-6 offset-xxl-2">
-                          <ul class="sub_menu_a expertize">
-                            <li><a href="#">Project management & design</a></li>
-                            <li>
-                              <a href="javascript:void(0)">Construction</a>
-                              <ul class="sub_submenu">
-                                <li><a href="#">Commercial buildings</a></li>
-                                <li><a href="#">high-rise buildings</a></li>
-                                <li><a href="#">residential</a></li>
-                                <li><a href="#">industrial</a></li>
-                                <li><a href="#">healthcare</a></li>
-                                <li><a href="#">Goverment & Educational</a></li>
-                              </ul>
-                            </li>
-                            <li>
-                              <a href="javascript:void(0)">Divisions</a>
-                              <ul class="sub_submenu">
-                                <li>
-                                  <a href="javascript:void(0)">Kooheji interiors</a>
-                                  <ul class="sub_sub_submenu">
-                                    <li><a href="#">Interior Design</a></li>
-                                    <li><a href="#">Fitouts</a></li>
-                                  </ul>
-                                </li>
-                                <li><a href="#">Mechanical Workshop</a></li>
-                              </ul>
-                            </li>
-                          </ul>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </li>
-                <li class="has_child nav-item has-megamenu">
-                  <a class="nav-link dropdown-toggle" href="javascript:void(0)">projects</a>
-                  <div class="sub_menu4 child_menu">
-                    <div class="container">
-                      <div class="row g-0">
-                        <div class="col-12 col-lg-4">
-                          <div class="head">
-                            <h3>projects</h3>
-                          </div>
-                        </div>
-                        <div class="col-12 col-lg-6 offset-lg-1 offset-0 col-xxl-6 offset-xxl-2">
-                          <ul class="sub_menu_a project">
-                            <li>
-                              <a href="javascript:void(0)">Completed Projects</a>
-                              <ul class="sub_submenu">
-                                <li><a href="#">king hamad university hospital</a></li>
-                                <li><a href="#">bahrain trade center</a></li>
-                                <li><a href="#">Durrat Al Bahrain</a></li>
-                                <li><a href="#">SULB Steel Mill</a></li>
-                                <li><a href="#">calicner plant(ALBA)</a></li>
-                                <li><a href="#">Porta Reef</a></li>
-                                <li><a href="#">IKEA</a></li>
-                                <li><a href="#">Juffair Square</a></li>
-                                <li><a href="#">Marassi</a></li>
-                                <li><a href="#">Fontana Garden</a></li>
-                                <li><a href="#">Fontana Suites</a></li>
-                                <li><a href="#">Catamaran</a></li>
-                                <li><a href="#">Seef Avenue</a></li>
-                                <li><a href="#">Ariva</a></li>
-                                <li><a href="#">Fontana Infinity</a></li>
-                              </ul>
-                            </li>
-                            <li><a href="#">Ongoing Projects</a></li>
-                          </ul>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </li>
-                <li class="has_child nav-item has-megamenu">
-                  <a class="nav-link dropdown-toggle" href="javascript:void(0)">Media</a>
-                  <div class="sub_menu4 child_menu">
-                    <div class="container">
-                      <div class="row g-0">
-                        <div class="col-12 col-lg-4">
-                          <div class="head">
-                            <h3>Media</h3>
-                          </div>
-                        </div>
-                        <div class="col-12 col-lg-6 offset-lg-1 offset-0 col-xxl-6 offset-xxl-2">
-                          <ul class="sub_menu_a">
-                            <li><a href="#">news</a></li>
-                            <li><a href="#">media gallery</a></li>
-                            <li><a href="#">downloads</a></li>
-                            <li><a href="#">newsletter</a></li>
-                          </ul>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </li>
-                <li class="has_child nav-item has-megamenu">
-                  <a class="nav-link dropdown-toggle" href="javascript:void(0)">Contact Us</a>
-                  <div class="sub_menu4 child_menu">
-                    <div class="container">
-                      <div class="row g-0">
-                        <div class="col-12 col-lg-4">
-                          <div class="head">
-                            <h3>contact us</h3>
-                          </div>
-                        </div>
-                        <div class="col-12 col-lg-6 offset-lg-1 offset-0 col-xxl-6 offset-xxl-2">
-                          <ul class="sub_menu_a">
-                            <li><a href="#">head office</a></li>
-                            <li><a href="#">joinery & fit out factory</a></li>
-                            <li><a href="#">michanical workshop</a></li>
-                            <li><a href="#">general enquiry</a></li>
-                          </ul>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </li>
-              </ul> -->
-                <style>
-                    .social_nav li:last-child{
-                        display: list-item;
-                    }
-                </style>
-              <ul class="social_nav">
-                
-                                                <li><a href="https://www.facebook.com/kcbahrain/" target="_blank"><i class="fab fa-facebook"></i></a></li>
-                                <li><a href="https://www.instagram.com/kcbahrain/" target="_blank"><i class="fab fa-instagram"></i></a></li>
-                                <li><a href="https://in.linkedin.com/company/kcbahrain?trk=public_profile_topcard-current-company" target="_blank"><i class="fab fa-linkedin-in"></i></a></li>
-                                <li><a href="https://www.youtube.com/channel/UChKzAsiAe0AApMBMdRuiBnw" target="_blank"><i class="fab fa-youtube"></i></a></li>
-                                                
-                
-                
-              </ul>
-            </div>
-        </div> <!-- navbar-collapse.// -->
-      </div> <!-- container-fluid.// -->
-    </nav>
-    <div class="for_Mmobile mobile_mennu">
-      <div class="container-fluid">
-        <div class="row">
-          <div class="col-12">
-            <div id="mySidenav" class="sidenav">
-              <div class="mobile_header">
-                <div class="logo_m">
-                  <a class="navbar-brand" href="../../index.html">
-                    <img src="../../assets/img/logo.png" class="img-fluid" alt="logo">
-                  </a>
-                </div>
-                <div class="open_ivo">
-                  <div class="close_icon" class="closebtn" onclick="closeNav()">
-                    <!-- <i class="fas fa-times"></i> -->
-                    <div class="bar1"></div>
-                    <div class="bar2"></div>
-                    <div class="bar3"></div>
-                  </div>
-                </div>
-              </div>
-              <div class="menu_mobile_start">
-                <div class="mega_menu ms-auto">
-                                    <ul class="main_menu navbar-nav" id="Level1">
-                                        <li class="has_child nav-item has-megamenu active">
-                      <a class="nav-link dropdown-toggle" href="javascript:void(0)">نبذة عنا</a>
-                      <div class="sub_menu1 child_menu">
-                        <div class="container">
-                          <div class="row g-0">
-                            <div class="col-12 col-lg-4">
-                              <div class="head">
-                                <h3>نبذة عنا</h3>
-                              </div>
-                            </div>
-                            <div class="col-12 col-lg-6 offset-lg-1 offset-0 col-xxl-6 offset-xxl-2">
-                                                            <ul class="sub_menu_a about">
-                                <style>
-        .cust-mobile-link span{
-            display: no ;
-        }
-        .sub_menu4{ min-height: 295px; }
-        @media  screen and (max-width: 991px){
-            .cust-mobile-link{
-                display: flex;
-                align-items: flex-start;
-                justify-content: space-between;
-            }
-            .cust-mobile-link span{
-                display: inline-block;
-                font-size: 20px;
-                color: #455560;
-            }
-        }
-    </style>
-
-                <ul class="sub_menu_a our-expertise">
-                                    <li>
-                                    <a href="../../about-us/about-kooheji-contractors.html"    >عن شركة الكوهجي للمقاولات</a>
-                                
-                
-                            </li>
-                                <li>
-                                    <a href="../../about-us/vision-and-mission.html"    >الرؤية والمهام والقيّم</a>
-                                
-                
-                            </li>
-                                <li>
-                                    <a href="../../about-us/directors-message.html"    >كلمة  رئيس مجلس الإدارة</a>
-                                
-                
-                            </li>
-                                <li>
-                                    <a href="../../about-us/our-culture.html"    >ثقافتنا</a>
-                                
-                
-                            </li>
-                                <li>
-                                    <a href="../../about-us/our-priorities.html"    >أولوياتنا</a>
-                                
-                
-                            </li>
-                                <li>
-                                    <div class="cust-mobile-link">
-                        <a href="#"    >الشركاء</a>
-                        
-                        <span><i class="fas fa-angle-down"></i></span>
-                        
-                    </div>
-                                
-                
-                                                        <style>
-        .cust-mobile-link span{
-            display: none;
-        }
-        @media  screen and (max-width: 991px){
-            .cust-mobile-link{
-                display: flex;
-                align-items: flex-start;
-                justify-content: space-between;
-            }
-            .cust-mobile-link span{
-                display: inline-block;
-                font-size: 20px;
-                color: #455560;
-            }
-        }
-    </style>
-
-                <ul class="sub_submenu">
-    
-    
-
-                    <li>
-                                                    <a href="../../about-us/partners/subsidiaries.html"    >الشركات التابعة</a>
-                                
-                
-                            </li>
-                    <li>
-                                                    <a href="../../about-us/partners/majority-shareholding.html"    >مساهمة الأغلبية</a>
-                                
-                
-                            </li>
-                    <li>
-                                                    <a href="../../about-us/partners/investment-companies.html"    >شركات الاستثمار</a>
-                                
-                
-                            </li>
-                    <li>
-                                                    <a href="../../about-us/partners/equal-shareholding.html"    >مساهمة متساوية</a>
-                                
-                
-                            </li>
-            </ul>
-                            </li>
-            </ul>
-                                
-                              </ul>
-                                                          </div>
-                          </div>
-                        </div>
-                      </div>
-                    </li>
-                                        <li class="has_child nav-item has-megamenu active">
-                      <a class="nav-link dropdown-toggle" href="javascript:void(0)">موظفونا</a>
-                      <div class="sub_menu1 child_menu">
-                        <div class="container">
-                          <div class="row g-0">
-                            <div class="col-12 col-lg-4">
-                              <div class="head">
-                                <h3>موظفونا</h3>
-                              </div>
-                            </div>
-                            <div class="col-12 col-lg-6 offset-lg-1 offset-0 col-xxl-6 offset-xxl-2">
-                                                            <ul class="sub_menu_a about">
-                                <style>
-        .cust-mobile-link span{
-            display: no ;
-        }
-        .sub_menu4{ min-height: 295px; }
-        @media  screen and (max-width: 991px){
-            .cust-mobile-link{
-                display: flex;
-                align-items: flex-start;
-                justify-content: space-between;
-            }
-            .cust-mobile-link span{
-                display: inline-block;
-                font-size: 20px;
-                color: #455560;
-            }
-        }
-    </style>
-
-                <ul class="sub_menu_a">
-                                    <li>
-                                    <a href="../../people/our-leadership.html#boardOfdirector"    >أعضاء مجلس الإدارة</a>
-                                
-                
-                            </li>
-                                <li>
-                                    <a href="../../people/our-leadership.html#chiefOfficers"    >رؤساء القطاعات</a>
-                                
-                
-                            </li>
-            </ul>
-                                
-                              </ul>
-                                                          </div>
-                          </div>
-                        </div>
-                      </div>
-                    </li>
-                                        <li class="has_child nav-item has-megamenu active">
-                      <a class="nav-link dropdown-toggle" href="javascript:void(0)">خبرتنا</a>
-                      <div class="sub_menu1 child_menu">
-                        <div class="container">
-                          <div class="row g-0">
-                            <div class="col-12 col-lg-4">
-                              <div class="head">
-                                <h3>خبرتنا</h3>
-                              </div>
-                            </div>
-                            <div class="col-12 col-lg-6 offset-lg-1 offset-0 col-xxl-6 offset-xxl-2">
-                                                            <ul class="sub_menu_a about">
-                                <style>
-        .cust-mobile-link span{
-            display: no ;
-        }
-        .sub_menu4{ min-height: 295px; }
-        @media  screen and (max-width: 991px){
-            .cust-mobile-link{
-                display: flex;
-                align-items: flex-start;
-                justify-content: space-between;
-            }
-            .cust-mobile-link span{
-                display: inline-block;
-                font-size: 20px;
-                color: #455560;
-            }
-        }
-    </style>
-
-                <ul class="sub_menu_a expertize">
-                                    <li>
-                                    <a href="../../our-expertise/project-management-and-design.html"    >إدارة المشاريع والتصميم</a>
-                                
-                
-                            </li>
-                                <li>
-                                    <div class="cust-mobile-link">
-                        <a href="../../our-expertise/construction.html"    >الإنشاءات</a>
-                        
-                        <span><i class="fas fa-angle-down"></i></span>
-                        
-                    </div>
-                                
-                
-                                                        <style>
-        .cust-mobile-link span{
-            display: none;
-        }
-        @media  screen and (max-width: 991px){
-            .cust-mobile-link{
-                display: flex;
-                align-items: flex-start;
-                justify-content: space-between;
-            }
-            .cust-mobile-link span{
-                display: inline-block;
-                font-size: 20px;
-                color: #455560;
-            }
-        }
-    </style>
-
-                <ul class="sub_submenu">
-    
-    
-
-                    <li>
-                                                    <a href="../../our-expertise/construction/commercial-and-residential-buildings.html"    >عمارات تجارية</a>
-                                
-                
-                            </li>
-                    <li>
-                                                    <a href="../../our-expertise/construction/urban-development.html"    >التطوير العمراني</a>
-                                
-                
-                            </li>
-                    <li>
-                                                    <a href="../../our-expertise/construction/high-rise-towers.html"    >الأبراج شاهقة الارتفاع</a>
-                                
-                
-                            </li>
-                    <li>
-                                                    <a href="../../our-expertise/construction/industrial.html"    >صناعي</a>
-                                
-                
-                            </li>
-                    <li>
-                                                    <a href="../../our-expertise/construction/healthcare-projects.html"    >الرعاية الصحية</a>
-                                
-                
-                            </li>
-                    <li>
-                                                    <a href="../../our-expertise/construction/government-and-educational-projects.html"    >الحكومة والتعليم</a>
-                                
-                
-                            </li>
-            </ul>
-                            </li>
-                                <li>
-                                    <div class="cust-mobile-link">
-                        <a href="#"    >الأقسام</a>
-                        
-                        <span><i class="fas fa-angle-down"></i></span>
-                        
-                    </div>
-                                
-                
-                                                        <style>
-        .cust-mobile-link span{
-            display: none;
-        }
-        @media  screen and (max-width: 991px){
-            .cust-mobile-link{
-                display: flex;
-                align-items: flex-start;
-                justify-content: space-between;
-            }
-            .cust-mobile-link span{
-                display: inline-block;
-                font-size: 20px;
-                color: #455560;
-            }
-        }
-    </style>
-
-                <ul class="sub_submenu">
-    
-    
-
-                    <li>
-                                                    <div class="cust-mobile-link">
-                        <a href="../../our-expertise/divisions/interior-design.html"    >كوهجي انتريورز</a>
-                        
-                        <span><i class="fas fa-angle-down"></i></span>
-                        
-                    </div>
-                                
-                
-                                                        <style>
-        .cust-mobile-link span{
-            display: none;
-        }
-        @media  screen and (max-width: 991px){
-            .cust-mobile-link{
-                display: flex;
-                align-items: flex-start;
-                justify-content: space-between;
-            }
-            .cust-mobile-link span{
-                display: inline-block;
-                font-size: 20px;
-                color: #455560;
-            }
-        }
-    </style>
-
-                <ul class="sub_submenu">
-    
-    
-
-                    <li>
-                                                    <a href="../../our-expertise/divisions/interior-design/ki-canal-view.html"    >كنال فيو</a>
-                                
-                
-            </li>
-                    <li>
-                                                    <a href="../../our-expertise/divisions/interior-design/conrad-hotel.html"    >فندق كونراد</a>
-                                
-                
-            </li>
-                    <li>
-                                                    <a href="../../our-expertise/divisions/interior-design/seef-avenue.html"    >شارع السيف</a>
-                                
-                
-            </li>
-                    <li>
-                                                    <a href="../../our-expertise/divisions/interior-design/fontana-infinity.html"    >فونتانا إنفينيتي</a>
-                                
-                
-            </li>
-                    <li>
-                                                    <a href="../../our-expertise/divisions/interior-design/spring-hill-2.html"    >سبرينغ هيل 2</a>
-                                
-                
-            </li>
-                    <li>
-                                                    <a href="../../our-expertise/divisions/interior-design/springfield-suites.html"    >سبرينج فيلد سيف</a>
-                                
-                
-            </li>
-                    <li>
-                                                    <a href="../../our-expertise/divisions/interior-design/fontana-gardens.html"    >فونتانا غاردنز</a>
-                                
-                
-            </li>
-                    <li>
-                                                    <a href="../../our-expertise/divisions/interior-design/fontana-suites.html"    >فونتانا سويتس</a>
-                                
-                
-            </li>
-                    <li>
-                                                    <a href="../../our-expertise/divisions/interior-design/ariva.html"    >أريفا</a>
-                                
-                
-            </li>
-                    <li>
-                                                    <a href="../../our-expertise/divisions/interior-design/onyx-bahrain-bay.html"    >أونيكس ريزيدنسز وأونيكس أرجان من روتانا</a>
-                                
-                
-            </li>
-            </ul>
-                            </li>
-                    <li>
-                                                    <div class="cust-mobile-link">
-                        <a href="../../our-expertise/divisions/joinery-factory.html"    >مصنع النجارة</a>
-                        
-                        <span><i class="fas fa-angle-down"></i></span>
-                        
-                    </div>
-                                
-                
-                                                        <style>
-        .cust-mobile-link span{
-            display: none;
-        }
-        @media  screen and (max-width: 991px){
-            .cust-mobile-link{
-                display: flex;
-                align-items: flex-start;
-                justify-content: space-between;
-            }
-            .cust-mobile-link span{
-                display: inline-block;
-                font-size: 20px;
-                color: #455560;
-            }
-        }
-    </style>
-
-                <ul class="sub_submenu">
-    
-    
-
-                    <li>
-                                                    <a href="../../our-expertise/divisions/joinery-factory/turnkey-fitout.html"    >أعمال التجهيز الشاملة</a>
-                                
-                
-            </li>
-                    <li>
-                                                    <a href="../../our-expertise/divisions/joinery-factory/retail-fixtures-fittings.html"    >تجهيزات قطاع التجزئة</a>
-                                
-                
-            </li>
-                    <li>
-                                                    <a href="../../our-expertise/divisions/joinery-factory/bespoke-furniture-hospitality-manufacturing.html"    >تصنيع الأثاث ومستلزمات الفنادق حسب الطلب</a>
-                                
-                
-            </li>
-                    <li>
-                                                    <a href="../../our-expertise/divisions/joinery-factory/kitchens-closets.html"    >المطابخ والخزائن</a>
-                                
-                
-            </li>
-            </ul>
-                            </li>
-                    <li>
-                                                    <a href="../../our-expertise/divisions/mechanical-factory.html"    >مصنع الأعمال الميكانيكية</a>
-                                
-                
-                            </li>
-            </ul>
-                            </li>
-            </ul>
-                                
-                              </ul>
-                                                          </div>
-                          </div>
-                        </div>
-                      </div>
-                    </li>
-                                        <li class="has_child nav-item has-megamenu active">
-                      <a class="nav-link dropdown-toggle" href="javascript:void(0)">مشاريعنا</a>
-                      <div class="sub_menu1 child_menu">
-                        <div class="container">
-                          <div class="row g-0">
-                            <div class="col-12 col-lg-4">
-                              <div class="head">
-                                <h3>مشاريعنا</h3>
-                              </div>
-                            </div>
-                            <div class="col-12 col-lg-6 offset-lg-1 offset-0 col-xxl-6 offset-xxl-2">
-                                                            <ul class="sub_menu_a about">
-                                <style>
-        .cust-mobile-link span{
-            display: no ;
-        }
-        .sub_menu4{ min-height: 295px; }
-        @media  screen and (max-width: 991px){
-            .cust-mobile-link{
-                display: flex;
-                align-items: flex-start;
-                justify-content: space-between;
-            }
-            .cust-mobile-link span{
-                display: inline-block;
-                font-size: 20px;
-                color: #455560;
-            }
-        }
-    </style>
-
-                <ul class="sub_menu_a project">
-                                    <li>
-                                    <div class="cust-mobile-link">
-                        <a href="../completed-projects.html"    >المشاريع المنجزة</a>
-                        
-                        <span><i class="fas fa-angle-down"></i></span>
-                        
-                    </div>
-                                
-                
-                                                        <style>
-        .cust-mobile-link span{
-            display: none;
-        }
-        @media  screen and (max-width: 991px){
-            .cust-mobile-link{
-                display: flex;
-                align-items: flex-start;
-                justify-content: space-between;
-            }
-            .cust-mobile-link span{
-                display: inline-block;
-                font-size: 20px;
-                color: #455560;
-            }
-        }
-    </style>
-
-                <ul class="sub_submenu">
-    
-    
-
-                    <li>
-                                                    <a href="wadi-al-riffa-villas.html"    >وادي الرفاع</a>
-                                
-                
-                            </li>
-                    <li>
-                                                    <a href="lavent-villas.html"    >فلل لافنت</a>
-                                
-                
-                            </li>
-                    <li>
-                                                    <a href="springfield-suites-bh.html"    >سبرينغ فيلد سويتس</a>
-                                
-                
-                            </li>
-                    <li>
-                                                    <a href="king-hamad-university-hospital.html"    >مستشفى الملك حمد الجامعي</a>
-                                
-                
-                            </li>
-                    <li>
-                                                    <a href="bahrain-world-trade-center.html"    >مركز البحرين التجاري العالمي</a>
-                                
-                
-                            </li>
-                    <li>
-                                                    <a href="durrat-al-bahrain.html"    >درة البحرين</a>
-                                
-                
-                            </li>
-                    <li>
-                                                    <a href="sulb-steel-mill.html"    >مجمع الصلب</a>
-                                
-                
-                            </li>
-                    <li>
-                                                    <a href="calciner-plant.html"    >مجمع التكليس (ألبا)</a>
-                                
-                
-                            </li>
-                    <li>
-                                                    <a href="porta-reef.html"    >بورتا ريف</a>
-                                
-                
-                            </li>
-                    <li>
-                                                    <a href="ikea.html"    >ايكيا</a>
-                                
-                
-                            </li>
-                    <li>
-                                                    <a href="juffair-square.html"    >جفير سكويرJ</a>
-                                
-                
-                            </li>
-                    <li>
-                                                    <a href="marassi-boulevard.html"    >مراسي بوليفارد</a>
-                                
-                
-                            </li>
-                    <li>
-                                                    <a href="onyx-by-rotana.html"    >أونيكس ريزيدنسز وأونيكس أرجان من روتانا</a>
-                                
-                
-                            </li>
-                    <li>
-                                                    <a href="sayacorp-tower.html"    >ساياكورب - فندق كونراد</a>
-                                
-                
-                            </li>
-                    <li>
-                                                    <a href="canal-view.html"    >كنال فيو</a>
-                                
-                
-                            </li>
-                    <li>
-                                                    <a href="coast-guard.html"    >خفر السواحل</a>
-                                
-                
-                            </li>
-                    <li>
-                                                    <a href="complete-fontana-gardens.html"    >فونتانا غاردنز</a>
-                                
-                
-                            </li>
-                    <li>
-                                                    <a href="complete-fontana-suites.html"    >فونتانا سويتس</a>
-                                
-                
-                            </li>
-                    <li>
-                                                    <a href="catamaran.html"    >كتماران</a>
-                                
-                
-                            </li>
-                    <li>
-                                                    <a href="complete-seef-avenue.html"    >سيف أفينيو</a>
-                                
-                
-                            </li>
-                    <li>
-                                                    <a href="complete-ariva.html"    >أريفا</a>
-                                
-                
-                            </li>
-                    <li>
-                                                    <a href="complete-fontana-infinity.html"    >فونتانا إنفينيتي</a>
-                                
-                
-                            </li>
-            </ul>
-                            </li>
-                                <li>
-                                    <div class="cust-mobile-link">
-                        <a href="../ongoing-projects.html"    >مشاريع قيد التنفيذ</a>
-                        
-                        <span><i class="fas fa-angle-down"></i></span>
-                        
-                    </div>
-                                
-                
-                                                        <style>
-        .cust-mobile-link span{
-            display: none;
-        }
-        @media  screen and (max-width: 991px){
-            .cust-mobile-link{
-                display: flex;
-                align-items: flex-start;
-                justify-content: space-between;
-            }
-            .cust-mobile-link span{
-                display: inline-block;
-                font-size: 20px;
-                color: #455560;
-            }
-        }
-    </style>
-
-                <ul class="sub_submenu">
-    
-    
-
-                    <li>
-                                                    <a href="../ongoing-projects/seef-avenue-2.html"    >سيف أڤينيو ||</a>
-                                
-                
-                            </li>
-                    <li>
-                                                    <a href="../ongoing-projects/onyx-skyview.html"    >أونيكس سكاي ڤيو</a>
-                                
-                
-                            </li>
-                    <li>
-                                                    <a href="../ongoing-projects/seef-boulvard.html"    >سيف بوليڤارد</a>
-                                
-                
-                            </li>
-                    <li>
-                                                    <a href="../ongoing-projects/marassi-bay.html"    >مراسي بي</a>
-                                
-                
-                            </li>
-                    <li>
-                                                    <a href="../ongoing-projects/marassi-terraces.html"    >مراسي تيراس</a>
-                                
-                
-                            </li>
-                    <li>
-                                                    <a href="../ongoing-projects/lavira-tharwa.html"    >لافيرا ثروة</a>
-                                
-                
-                            </li>
-                    <li>
-                                                    <a href="../ongoing-projects/flamant-saudi.html"    >فلامنت</a>
-                                
-                
-                            </li>
-                    <li>
-                                                    <a href="../ongoing-projects/belgravia-saudi.html"    >بلغرافيا</a>
-                                
-                
-                            </li>
-                    <li>
-                                                    <a href="../ongoing-projects/kooheji-medical-complex.html"    >مجمع الكوهجي الطبي</a>
-                                
-                
-                            </li>
-            </ul>
-                            </li>
-            </ul>
-                                
-                              </ul>
-                                                          </div>
-                          </div>
-                        </div>
-                      </div>
-                    </li>
-                                        <li class="has_child nav-item has-megamenu active">
-                      <a class="nav-link dropdown-toggle" href="#">وسائل الإعلام</a>
-                      <div class="sub_menu1 child_menu">
-                        <div class="container">
-                          <div class="row g-0">
-                            <div class="col-12 col-lg-4">
-                              <div class="head">
-                                <h3>وسائل الإعلام</h3>
-                              </div>
-                            </div>
-                            <div class="col-12 col-lg-6 offset-lg-1 offset-0 col-xxl-6 offset-xxl-2">
-                                                            <ul class="sub_menu_a about">
-                                <style>
-        .cust-mobile-link span{
-            display: no ;
-        }
-        .sub_menu4{ min-height: 295px; }
-        @media  screen and (max-width: 991px){
-            .cust-mobile-link{
-                display: flex;
-                align-items: flex-start;
-                justify-content: space-between;
-            }
-            .cust-mobile-link span{
-                display: inline-block;
-                font-size: 20px;
-                color: #455560;
-            }
-        }
-    </style>
-
-                <ul class="sub_menu_a">
-                                    <li>
-                                    <a href="../../media/articles.html"    >أخبار</a>
-                                
-                
-                            </li>
-                                <li>
-                                    <a href="../../media/media-gallery.html"    >معرض الوسائط</a>
-                                
-                
-                            </li>
-                                <li>
-                                    <a href="../../media/downloads.html"    >التحميلات</a>
-                                
-                
-                            </li>
-                                <li>
-                                    <a href="../../../assets/img/Newsletter-OCT-2021.pdf"   target="_blank"   >النشرة الإخبارية</a>
-                                
-                
-                            </li>
-            </ul>
-                                
-                              </ul>
-                                                          </div>
-                          </div>
-                        </div>
-                      </div>
-                    </li>
-                                        <li class="has_child nav-item has-megamenu active">
-                      <a class="nav-link dropdown-toggle" href="javascript:void(0)">اتصل بنا</a>
-                      <div class="sub_menu1 child_menu">
-                        <div class="container">
-                          <div class="row g-0">
-                            <div class="col-12 col-lg-4">
-                              <div class="head">
-                                <h3>اتصل بنا</h3>
-                              </div>
-                            </div>
-                            <div class="col-12 col-lg-6 offset-lg-1 offset-0 col-xxl-6 offset-xxl-2">
-                                                            <ul class="sub_menu_a about">
-                                <style>
-        .cust-mobile-link span{
-            display: no ;
-        }
-        .sub_menu4{ min-height: 295px; }
-        @media  screen and (max-width: 991px){
-            .cust-mobile-link{
-                display: flex;
-                align-items: flex-start;
-                justify-content: space-between;
-            }
-            .cust-mobile-link span{
-                display: inline-block;
-                font-size: 20px;
-                color: #455560;
-            }
-        }
-    </style>
-
-                <ul class="sub_menu_a">
-                                    <li>
-                                    <a href="../../contact-us/get-in-touch.html"    >موقع</a>
-                                
-                
-                            </li>
-                                <li>
-                                    <a href="../../contact-us/get-in-touch.html#Joinery"    >مصنع النجارة والتجهيزات</a>
-                                
-                
-                            </li>
-                                <li>
-                                    <a href="../../contact-us/get-in-touch.html#Mechanical"    >ورشة ميكانيكية</a>
-                                
-                
-                            </li>
-                                <li>
-                                    <a href="../../contact-us/get-in-touch.html#Generalenq"    >استفسار عام</a>
-                                
-                
-                            </li>
-            </ul>
-                                
-                              </ul>
-                                                          </div>
-                          </div>
-                        </div>
-                      </div>
-                    </li>
-                                        
-                    <li class="has_child not-at-all nav-item active">
-                                                                        <!-- FOR ARABIC PAGE -->
-                        <a class="nav-link" href="../../../index.html">English <img src="../../../assets/img/en-flag.jpg" class="img-fluid" alt=""></span></a>
-                        <!-- FOR ARABIC PAGE -->
-                                                
-                    </li>
-                  </ul>
-                                    <ul class="social_nav">
-
-                                                        <li>
-                        <a href="https://www.facebook.com/kcbahrain/" target="_blank"><i class="fab fa-facebook"></i></a>
-                    </li>
-
-                    
-                                      <li>
-                        <a href="https://www.instagram.com/kcbahrain/" target="_blank"><i class="fab fa-instagram"></i></a>
-                    </li>
-
-                    
-                                      <li>
-                        <a href="https://in.linkedin.com/company/kcbahrain?trk=public_profile_topcard-current-company" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-                    </li>
-
-                    
-                                      <li>
-                        <a href="https://www.youtube.com/channel/UChKzAsiAe0AApMBMdRuiBnw" target="_blank"><i class="fab fa-youtube"></i></a>
-                    </li>
-
-                    
-                                                      </ul>
-                </div>
-              </div>
-            </div>
-              <!-- Use any element to open the sidenav -->
-            <div class="mobile_header">
-              <div class="logo_m">
-                <a class="navbar-brand" href="../../index.html">
-                  <img src="../../assets/img/logo.png" class="img-fluid" alt="logo">
-                </a>
-              </div>
-              <div class="open_ivo">
-                <div class="ham_icon" onclick="openNav()">
-                  <div class="bar1"></div>
-                  <div class="bar2"></div>
-                  <div class="bar3"></div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-</div>
-    <!-- ============= COMPONENT ============== -->
-    <!-- ============= COMPONENT END// ============== -->
-
-    <!-- ============= mobile // ============== -->
-
-
-    <!-- ============= mobile END// ============== -->
-
-
-    
     <style>
-    /* .slider_slides{ height: 88vh; } */
-    .video_slides{aspect-ratio: 16/9; width: 100% !important; height: auto;}
-    .banneriframe {
+      /* .slider_slides{ height: 88vh; } */
+      .video_slides {
+        aspect-ratio: 16/9;
+        width: 100% !important;
+        height: auto;
+      }
+      .banneriframe {
         position: absolute;
         height: 100%;
         display: block;
         pointer-events: none;
         top: 0;
         width: 100%;
-    }
-    @media  screen and (max-width: 1280px){
+      }
+      @media screen and (max-width: 1280px) {
         /* .slider_slides { height: 640px; } */
-    }
-    @media  screen and (max-width: 551px){
-        .youtube_hover{bottom: 50px;}
-        .youtube_hover a i{font-size: 40px;}
-    }
-    .youtube-caption{ color: #ffffff; filter: drop-shadow(2px 4px 6px black); }
-    .youtube-caption p{ font-family: 'GESSTwoMedium' !important; font-size: 38px; }
-</style>
+      }
+      @media screen and (max-width: 551px) {
+        .youtube_hover {
+          bottom: 50px;
+        }
+        .youtube_hover a i {
+          font-size: 40px;
+        }
+      }
+      .youtube-caption {
+        color: #ffffff;
+        filter: drop-shadow(2px 4px 6px black);
+      }
+      .youtube-caption p {
+        font-family: "GESSTwoMedium" !important;
+        font-size: 38px;
+      }
+    </style>
 
-<section class="banner_slide1 hello ">
-    <div class="container-fluid">
+    <section class="banner_slide1 hello">
+      <div class="container-fluid">
         <div class="row">
-            <div class="col-12 px-0">
-                <div class="banner_slide">
-                    <div class="home_slider">
-                                                                                                <div class="slider_slides video_slides   "
-                            style="background: url('../../../filemanager/uploads/c-Ikea-5.jpg') 50% 50% no-repeat;">
+          <div class="col-12 px-0">
+            <div class="banner_slide">
+              <div class="home_slider">
+                <div
+                  class="slider_slides video_slides"
+                  style="
+                    background: url(&quot;../../../filemanager/uploads/c-Ikea-5.jpg&quot;)
+                      50% 50% no-repeat;
+                  "
+                >
+                  ;
 
-                        ;
+                  <iframe
+                    class="banneriframe"
+                    width="100%"
+                    height="auto"
+                    src="https://www.youtube.com/embed/6_cmwiYLb-w?autoplay=1&amp;loop=1&amp;playlist=6_cmwiYLb-w&amp;mute=1&amp;controls=0&amp;showinfo=0&amp;autohide=1"
+                    title="YouTube video player"
+                    frameborder="0"
+                  ></iframe>
 
-                        <iframe class="banneriframe" width="100%" height="auto" src="https://www.youtube.com/embed/6_cmwiYLb-w?autoplay=1&amp;loop=1&amp;playlist=6_cmwiYLb-w&amp;mute=1&amp;controls=0&amp;showinfo=0&amp;autohide=1" title="YouTube video player" frameborder="0"></iframe>
-                        
-                            <div class="container-fluid content_row sg_text">
-                                <div class="row">
-                                                                        <div class="slide_title col-md-6">
-                                        <h2><p>ايكيا</p></h2>
-                                    </div>
-                                    <div class="slide_text col-md-6">
-                                        <p>
-                                        <p>
-                                    </div>
-                                                                    </div>
-                            </div>
-                        </div>
-                                                                                            </div>
+                  <div class="container-fluid content_row sg_text">
+                    <div class="row">
+                      <div class="slide_title col-md-6">
+                        <h2><p>ايكيا</p></h2>
+                      </div>
+                      <div class="slide_text col-md-6">
+                        <p></p>
+                        <p></p>
+                      </div>
+                    </div>
+                  </div>
                 </div>
+              </div>
             </div>
-            <div class="col-12 px-0">
-                                <div class="youtube_hover">
-                    <a href="https://youtu.be/qATVZArwayk" target="_blank"><i class="fab fa-youtube"></i></a>
-                                    </div>
-                                <div class="mouse_hover">
-                    <a href="#welcome">
-                        <img src="../../../assets/img/Mouse-Icon.png" class="img-fluid mkh-none" alt="">
-                        <img src="../../../assets/img/mobile-down-icon.png" class="img-fluid dkh-none" alt="">
-                    </a>
-                </div>
+          </div>
+          <div class="col-12 px-0">
+            <div class="youtube_hover">
+              <a href="https://youtu.be/qATVZArwayk" target="_blank"
+                ><i class="fab fa-youtube"></i
+              ></a>
             </div>
+            <div class="mouse_hover">
+              <a href="#welcome">
+                <img
+                  src="/assets/img/Mouse-Icon.png"
+                  class="img-fluid mkh-none"
+                  alt=""
+                />
+                <img
+                  src="/assets/img/mobile-down-icon.png"
+                  class="img-fluid dkh-none"
+                  alt=""
+                />
+              </a>
+            </div>
+          </div>
         </div>
-    </div>
-</section>
+      </div>
+    </section>
 
-<script>
-var page = window.location.pathname;
-var banneriframe = document.getElementsByClassName('banneriframe');
-var videoslides = document.getElementsByClassName('video_slides');
-if(page == '../../index.html'){
-    // -- do stuff
-    console.log('home page');
-} else{
-// -- do other stuff
-    console.log('other page');
-// removing the video
-    document.querySelectorAll('.banneriframe').forEach(function(el) {
-        el.style.display = 'none';
-    });
-// removing the video_slides class
-    var elems = document.querySelectorAll(".slider_slides.video_slides");
-    [].forEach.call(elems, function(el) {
-        el.classList.remove("video_slides");
-    }); 
-}
-</script>
+    <script>
+      var page = window.location.pathname;
+      var banneriframe = document.getElementsByClassName("banneriframe");
+      var videoslides = document.getElementsByClassName("video_slides");
+      if (page == "../../index.html") {
+        // -- do stuff
+        console.log("home page");
+      } else {
+        // -- do other stuff
+        console.log("other page");
+        // removing the video
+        document.querySelectorAll(".banneriframe").forEach(function (el) {
+          el.style.display = "none";
+        });
+        // removing the video_slides class
+        var elems = document.querySelectorAll(".slider_slides.video_slides");
+        [].forEach.call(elems, function (el) {
+          el.classList.remove("video_slides");
+        });
+      }
+    </script>
 
-
-    
-        
-        <section class="    welcome_sec home_padd    " id="welcome">
-            <div class="container">
-                <div class="row">
-                                                                                                        <div class="col-12">
-                                    <h1 class="all_head"  style="border-bottom: 2px solid #a3a3a3; padding-bottom: 20px; display: inline-block;"  >
-                                            ايكيا
-                                    </h1>
-                                </div>
-                                                                                                                                                <div class="col-12 col-lg-6">
-                                                                                                                                                                                                                <div class=" ">
-                                    <p>
-                                                                                    <p>ويتضمن 35,000 متر مكعب من الخرسانة المصبوبة في الموقع، و48,500 متر مربع من العناصر مسبقة الصب، وتركيب 3000 طن من الحديد الصلب. </p>
-                                                                            </p>
-                                </div>
-                            </div>
-                            <div class="col-12 col-lg-6">
-
-                                                                                                                                                                                                                <div class=" ">
-                                    <p>
-                                        <p>تولت شركة الكوهجي للمقاولات أعمال البناء في هذا المشروع  بدءاً من  وضع الركائز الرأسية حتى استكمال العمل، بما في ذلك الاختبار والتشغيل التجريبي، وذلك خلال فترة 72 أسبوعاً لأكبر محل لأيكيا في منطقة الخليج ويقع في سلماباد. يمتد المشروع على إجمالي مساحة تجزئة تبلغ 37,000 متر مربع، </p>
-                                    </p>
-                                </div>
-                            </div>
-                                                            </div>
-            </div>
-        </section>
-
-    
-    
-        
-        <style>
-    .counter_sec{ direction: rtl; text-align: right; }
-    .counter{ margin: 0 10px; }
-</style>
-<section class="counter_sec c_padd "  style="background: #0066aa" >
-    <div class="container">
-        <div class="row">
-                        <div class="col">
-                <div class="counter_box">
-                    <span class="counter"
-                                                    style="-webkit-text-fill-color: #0066aa; -webkit-text-stroke-color: #fff;"
-                         >
-                        26
-                    </span><span class="suffix"
-                                                    style="-webkit-text-fill-color: #0066aa; -webkit-text-stroke-color: #fff;"
-                        ></span>
-                                        <style>
-                        #first_24:before {
-                            background-color: #fff;
-                        }
-                    </style>
-                                        <p id="first_24"
-                                                style="color: #fff;"
-                        >
-                        مليون د.ب
-                    </p>
-                </div>
-            </div>
-                                    <div class="col second_count">
-                <div class="counter_box">
-                    <span class="counter"
-                                                    style="-webkit-text-fill-color: #0066aa; -webkit-text-stroke-color: #fff;"
-                        >
-                        1.8
-                    </span><span class="suffix"
-                                                    style="-webkit-text-fill-color: #0066aa; -webkit-text-stroke-color: #fff;"
-                        ></span>
-                                        <style>
-                        #second_24:before {
-                            background-color: #fff;
-                        }
-                    </style>                     <p id="second_24"
-                                                style="color: #fff;"
-                        >
-                        سنة لاستكمال المشروع
-                    </p>
-                </div>
-            </div>
-                                    <div class="col">
-                <div class="counter_box">
-                    <span class="counter"
-                                                    style="-webkit-text-fill-color: #0066aa; -webkit-text-stroke-color: #fff;"
-                        >
-                        37
-                    </span><span class="suffix"
-                                                        style="-webkit-text-fill-color: #0066aa; -webkit-text-stroke-color: #fff;"
-                        >K</span>
-                                        <style>
-                        #third_24:before {
-                            background-color: #fff;
-                        }
-                    </style>
-                                         <p id="third_24"
-                                                style="color: #fff;"
-                        >
-                        متر مربع مساحة التجزئة
-                    </p>
-                </div>
-            </div>
-                    </div>
-    </div>
-</section>
-
-
-    
-        
-        <section class="blogs slick_btns  ">
-    <div class="container">
-        <div class="row">
-            <div class="col-12">
-            <h2 class="all_head">ماذا يجري</h2>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-lg-3 col-12">
-            <div class="blog_posts">
-                
-                                                            <div class="posts_slides post_blog_slides">
-                            <div class="post_block">
-                                                        <a href="../../media/articles.html" class="blog_img">
-                                <img src="../../filemanager/uploads/6.png" class="img-fluid" alt="">
-                            </a>
-                                                                                        <p class="post_meta">20 May 2024</p>
-                                                                                        <h3>مركز الكوهجي الطبي 2024</h3>
-                                                                                        <a href="../../media/articles.html" class="desc">
-                                    <span>محمد بن عبدالله يضع حجر الأساس لمركز الكوهجي للطب الخاص قرب مجمع السلمانية الطبي</span>
-                                                                            <p></p>
-                                                                    </a>
-                                                        </div>
-                        </div>
-                                            <div class="posts_slides post_blog_slides">
-                            <div class="post_block">
-                                                        <a href="../../media/articles.html" class="blog_img">
-                                <img src="../../filemanager/uploads/Picture1.jpg" class="img-fluid" alt="">
-                            </a>
-                                                                                        <p class="post_meta">28 February 2024</p>
-                                                                                        <h3>2024 أونيكس سكاي ڤيو</h3>
-                                                                                        <a href="../../media/articles.html" class="desc">
-                                    <span>الكوهجي للتطوير العقاري تعلن عن وضع حجر الأساس للاحتفال ببدء أعمال الإنشاء في المشروع الثاني من سلسلة مشاريع أبراج أونيكس السكنية:
-&nbsp;"أونيكس سكاي ڤيو" </span>
-                                                                            <p></p>
-                                                                    </a>
-                                                        </div>
-                        </div>
-                                            <div class="posts_slides post_blog_slides">
-                            <div class="post_block">
-                                                        <a href="../../media/articles.html" class="blog_img">
-                                <img src="../../filemanager/uploads/news%20(1).jpg" class="img-fluid" alt="">
-                            </a>
-                                                                                        <p class="post_meta">28 March 2023</p>
-                                                                                        <h3>شركة الكوهجي للمقاولات والتطوير العقاري تحتفل بمرور 50 عامًا</h3>
-                                                                                        <a href="../../media/articles.html" class="desc">
-                                    <span>شركة الكوهجي للمقاولات والتطوير العقاري تحتفل بمرور 50 عامًا&nbsp;</span>
-                                                                            <p></p>
-                                                                    </a>
-                                                        </div>
-                        </div>
-                                                </div>
-                            <div class="more_news project_more_de">
-                                        <a href="../../media/articles.html" class="uni_btn" target="_blank">
-                                                أخبار
-                    </a>
-                </div>
-                        </div>
-            
-            <!-- Youtube Code -->
-            <!--<div class="col-lg-6 col-12 insta_cols">
-                <div class="posts_slides youtube_feeds">
-                                        
-                        <div data-mc-src="dde4ed52-3015-4012-89b7-369f72470b26#youtube"></div>
-                        <script
-                        src="https://cdn2.woxo.tech/a.js#61a4b54c69d12c001689e2e2"
-                        async data-usrc>
-                        </script>
-                                    </div>
-            </div>-->
-
-            <div class="col-lg-6 col-12">
-                <div class="row">
-                    <div class="col-md-12 text-center mt-4 mb-3">
-                        <img src="https://api.woxo.tech/instagram/userpicture?source=@kcbahrain" class="wx-title-image d-inline-block css-w895p" alt="" style="width: 30px;" />
-                        <h2 class=" d-inline-block" style="font-size: 20px; font-family: Roboto, sans-serif; font-weight: 400; letter-spacing: 1.4px;" >إلهام يومي
-</h2>
-                    </div>
-                    <div class="col-lg-6 col-12 hidden">
-                        <div class="posts_slides youtube_feeds">
-                        <iframe width="100%" height="300" src="https://www.youtube.com/embed/ag_X7jlPWB4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" style="border-radius: 10px;" allowfullscreen></iframe>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-6 col-12 hidden">
-                        <div class="posts_slides youtube_feeds">
-                            <iframe width="100%" height="300" src="https://www.youtube.com/embed/t0yitkLkFG4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" style="border-radius: 10px;" allowfullscreen></iframe>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!--  Instagram Code -->
-            <div class="col-lg-3 col-12 insta_cols">
-                <div class="posts_slides insta_feedss">
-                                            
-                        <div data-mc-src="26f5eb34-d4c4-48e7-9220-20095072e4e5#instagram"></div>
-                        <script
-                        src="https://cdn2.woxo.tech/a.js#61a4b54c69d12c001689e2e2"
-                        async data-usrc>
-                        </script>
-                                    </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-  
-
-
-    
-
-    <!--
     <section class="welcome_sec home_padd" id="welcome">
       <div class="container">
         <div class="row">
           <div class="col-12">
-            <h1 class="all_head">Welcome to Kooheji Contractors</h1>
+            <h1
+              class="all_head"
+              style="
+                border-bottom: 2px solid #a3a3a3;
+                padding-bottom: 20px;
+                display: inline-block;
+              "
+            >
+              ايكيا
+            </h1>
           </div>
           <div class="col-12 col-lg-6">
-            <p>
-              Established in 1973, Kooheji Contractors has 48 years of experience in construction, civil engineering
-              and design, with an outstanding record of success both in Bahrain and throughout the MENA region.
-            </p>
-          </div>
-          <div class="col-12 col-lg-6">
-            <p>
-              Our construction experience ranges from urban development to commercial and industrial projects
-              and contributes to growing the quality of community life through affordable housing projects,
-              waterfront communities, luxury high-rise living and more.
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="counter_sec c_padd">
-      <div class="container">
-        <div class="row">
-          <div class="col-4">
-            <div class="counter_box">
-              <span class="counter">48</span>
-              <p>years’ experience</p>
-            </div>
-          </div>
-          <div class="col-4 second_count">
-            <div class="counter_box">
-              <span class="counter">6100</span>
-              <span>+</span>
-              <p>major projects delivered</p>
-            </div>
-          </div>
-          <div class="col-4">
-            <div class="counter_box">
-              <span class="counter">80</span>
-              <p>milestone projects</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="our_project slick_btns mob_slide">
-      <div class="container">
-        <div class="row">
-          <div class="col-12">
-            <div class="project_slider">
-              <h2 class="all_head">Our Projects</h2>
-              <div class="project_slides-for">
-                <div class="slides_projectfor">
-                  <div class="for_text">
-                    <img src="assets/img/1Fontana-Infinity.jpg" class="img-fluid" alt="">
-                    <div class="pro_slide_text">
-                      <h3>Fontana Infinity</h3>
-                      <p>Fontana Infinity offers the ultimate resort-style lifestyle. With a total built-up area of 125,350 sqm, the 2 towers offer 853 various types of luxurious apartment units</p>
-                      <a href="#">learn more</a>
-                    </div>
-                  </div>
-                </div>
-                <div class="slides_projectfor">
-                  <div class="for_text">
-                    <img src="assets/img/1ONYX.jpg" class="img-fluid" alt="">
-                    <div class="pro_slide_text">
-                      <h3>ONYX Bahrain Bay</h3>
-                      <p>ONYX Bahrain Bay is a bespoke architectural masterpiece designed to attract attention. With a built-up area of 130 K sqm, the 2 striking towers offer 700 apartments</p>
-                      <a href="#">learn more</a>
-                    </div>
-                  </div>
-                </div>
-                <div class="slides_projectfor">
-                  <div class="for_text">
-                    <img src="assets/img/1Canal-View.jpg" class="img-fluid" alt="">
-                    <div class="pro_slide_text">
-                      <h3>Canal View</h3>
-                      <p>Located on Dilmunia, Canal View project consists of a mixed-use development comprising mainly residential and retail areas with an approximate footprint of 11,500 sqm</p>
-                      <a href="#">learn more</a>
-                    </div>
-                  </div>
-                </div>
-                <div class="slides_projectfor">
-                  <div class="for_text">
-                    <img src="assets/img/1Ikea.jpg" class="img-fluid" alt="">
-                    <div class="pro_slide_text">
-                      <h3>IKEA</h3>
-                      <p>Located in Salmabad, the IKEA store is the biggest in the Gulf region, with a total retail area of 37,000 sq m. The scope included from the Pile cap to completion, including the testing and commissioning </p>
-                      <a href="#">learn more</a>
-                    </div>
-                  </div>
-                </div>
-                <div class="slides_projectfor">
-                  <div class="for_text">
-                    <img src="assets/img/1Fontana-Towers.jpg" class="img-fluid" alt="">
-                    <div class="pro_slide_text">
-                      <h3>Fontana Towers</h3>
-                      <p>With a total built-up area of 100,000 sqm, Fontana Towers consists of four towers each 32 floors offering 404 various types of luxurious apartment units</p>
-                      <a href="#">learn more</a>
-                    </div>
-                  </div>
-                </div>
-                <div class="slides_projectfor">
-                  <div class="for_text">
-                    <img src="assets/img/1Fontana-Gardens.jpg" class="img-fluid" alt="">
-                    <div class="pro_slide_text">
-                      <h3>Fontana Gardens</h3>
-                      <p>With a total built-up area of 104,100 sqm, Fontana Gardens consists of three towers offering 413 various types of luxurious apartment units</p>
-                      <a href="#">learn more</a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="project_slides-nav">
-                <div class="slides_projectnav">
-                  <div class="nav_text">
-                    <img src="assets/img/nav-Fontana-Infinity.jpg" class="img-fluid" alt="">
-                    <a href="#">
-                      <h4>Fontana Infinity</h4>
-                      <p>read more //</p>
-                    </a>
-                  </div>
-                </div>
-                <div class="slides_projectnav">
-                  <div class="nav_text">
-                    <img src="assets/img/nav-ONYX.jpg" class="img-fluid" alt="">
-                    <a href="#">
-                      <h4>ONYX Bahrain Bay</h4>
-                      <p>read more //</p>
-                    </a>
-                  </div>
-                </div>
-                <div class="slides_projectnav">
-                  <div class="nav_text">
-                    <img src="assets/img/nav-Canal-View.jpg" class="img-fluid" alt="">
-                    <a href="#">
-                      <h4>Canal View</h4>
-                      <p>read more //</p>
-                    </a>
-                  </div>
-                </div>
-                <div class="slides_projectnav">
-                  <div class="nav_text">
-                    <img src="assets/img/nav-Ikea.jpg" class="img-fluid" alt="">
-                    <a href="#">
-                      <h4>IKEA</h4>
-                      <p>read more //</p>
-                    </a>
-                  </div>
-                </div>
-                <div class="slides_projectnav">
-                  <div class="nav_text">
-                    <img src="assets/img/nav-Fontana-Towers.jpg" class="img-fluid" alt="">
-                    <a href="#">
-                      <h4>Fontana Towers</h4>
-                      <p>read more //</p>
-                    </a>
-                  </div>
-                </div>
-                <div class="slides_projectnav">
-                  <div class="nav_text">
-                    <img src="assets/img/nav-Fontana-Gardens.jpg" class="img-fluid" alt="">
-                    <a href="#">
-                      <h4>Fontana Gardens</h4>
-                      <p>read more //</p>
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="our_client">
-      <div class="container">
-        <div class="row">
-          <div class="col-12">
-            <h2 class="all_head">Our Clients</h2>
-          </div>
-          <div class="col-12">
-            <div class="client_logo client_logo_home">
-              <div class="client_pic">
-                <a href="#">
-                  <img src="assets/img/logo-client1.png" class="img-fluid" alt="">
-                </a>
-              </div>
-              <div class="client_pic">
-                <a href="#">
-                  <img src="assets/img/logo-client2.png" class="img-fluid" alt="">
-                </a>
-              </div>
-              <div class="client_pic">
-                <a href="#">
-                  <img src="assets/img/logo-client3.png" class="img-fluid" alt="">
-                </a>
-              </div>
-              <div class="client_pic">
-                <a href="#">
-                  <img src="assets/img/logo-client4.png" class="img-fluid" alt="">
-                </a>
-              </div>
-              <div class="client_pic">
-                <a href="#">
-                  <img src="assets/img/logo-client5.png" class="img-fluid" alt="">
-                </a>
-              </div>
-              <div class="client_pic">
-                <a href="#">
-                  <img src="assets/img/logo-client6.png" class="img-fluid" alt="">
-                </a>
-              </div>
-              <div class="client_pic">
-                <a href="#">
-                  <img src="assets/img/logo-client7.png" class="img-fluid" alt="">
-                </a>
-              </div>
-              <div class="client_pic">
-                <a href="#">
-                  <img src="assets/img/logo-client8.png" class="img-fluid" alt="">
-                </a>
-              </div>
-              <div class="client_pic">
-                <a href="#">
-                  <img src="assets/img/logo-client9.png" class="img-fluid" alt="">
-                </a>
-              </div>
-              <div class="client_pic">
-                <a href="#">
-                  <img src="assets/img/logo-client10.png" class="img-fluid" alt="">
-                </a>
-              </div>
-              <div class="client_pic">
-                <a href="#">
-                  <img src="assets/img/logo-client11.png" class="img-fluid" alt="">
-                </a>
-              </div>
-              <div class="client_pic">
-                <a href="#">
-                  <img src="assets/img/logo-client12.png" class="img-fluid" alt="">
-                </a>
-              </div>
-              <div class="client_pic">
-                <a href="#">
-                  <img src="assets/img/logo-client13.png" class="img-fluid" alt="">
-                </a>
-              </div>
-              <div class="client_pic">
-                <a href="#">
-                  <img src="assets/img/logo-client14.png" class="img-fluid" alt="">
-                </a>
-              </div>
-              <div class="client_pic">
-                <a href="#">
-                  <img src="assets/img/logo-client15.png" class="img-fluid" alt="">
-                </a>
-              </div>
-              <div class="client_pic">
-                <a href="#">
-                  <img src="assets/img/logo-client16.png" class="img-fluid" alt="">
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>-->
-    <footer class="footer_sec">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-4 g-0">
-            <div class="contact_detail address">
-              <h4>اتصل بنا</h4>
+            <div class=" ">
+              <p></p>
               <p>
-                  مبنى 459 ، طريق 117 ، مجمع 701 ، توبلي،
-المنامة ، مملكة البحرين
-                
+                ويتضمن 35,000 متر مكعب من الخرسانة المصبوبة في الموقع، و48,500
+                متر مربع من العناصر مسبقة الصب، وتركيب 3000 طن من الحديد
+                الصلب.&nbsp;
               </p>
-                              <a href="tel:97317786500+" class="ft_mob">هاتف: 97317786500+</a>
-                            <span class="m_comma">,</span>
-                                <a href="tel:97317786565+" class="ft_mob">فاكس: 97317786565+</a>
-                            <span class="m_comma">,</span>
-                            <a href="mailto:inquiry@kcbahrain.com" class="ft_mob">بريد الكتروني: inquiry@kcbahrain.com</a>
-                                              <a href="../../../get-in-touch.html" class="uni_btn kc_get_touch">ابقى على تواصل</a>
-                          </div>
-          </div>
-          <div class="col-lg-4 g-0">
-            <div class="contact_detail subscribe">
-              <h4>اشترك في نشرتنا الإخبارية</h4>
-              <form action="https://www.koohejicontractors.com/ar/subscription" method="post" id="sub_form">
-                  <input type="hidden" name="_token" value="14aJZ5f6I0gA8yhhY3McY6Bqmg07ulz6OYuvKCRS">                <div class="mb-3">
-                  <input type="email" class="form-control" id="Email1" placeholder="عنوان بريدك الإلكتروني" name="email">
-                                                    </div>
-                <button type="submit" class="uni_btn kc_subs">الإشتراك</button>
-              </form>
+              <p></p>
             </div>
           </div>
-          <div class="col-lg-4 g-0">
-            <div class="contact_detail social">
-              <h4>اتصل بنا</h4>
-              <style>
-                  .social_nav.footer_cocial li:last-child{
-                      display: list-item;
-                  }
-              </style>
-              <ul class="social_nav d-flex footer_cocial">
-                                                              <li><a href="https://www.facebook.com/kcbahrain/" target="_blank"><i class="fab fa-facebook"></i></a></li>
-                                            <li><a href="https://www.instagram.com/kcbahrain/" target="_blank"><i class="fab fa-instagram"></i></a></li>
-                                            <li><a href="https://in.linkedin.com/company/kcbahrain?trk=public_profile_topcard-current-company" target="_blank"><i class="fab fa-linkedin-in"></i></a></li>
-                                            <li><a href="https://www.youtube.com/channel/UChKzAsiAe0AApMBMdRuiBnw" target="_blank"><i class="fab fa-youtube"></i></a></li>
-                                                      
-                
-              </ul>
-                                                  <a href="../../../career.html">العمل معنا</a>
-                                  <a href="../../../term-of-use.html">شروط الاستخدام</a>
-                                  <a href="../../../index.html"></a>
-                              
-              <p class="copyright">
-                &copy; 2026<br>
-                مقاولون الكوهجي. كل الحقوق محفوظة
+          <div class="col-12 col-lg-6">
+            <div class=" ">
+              <p></p>
+              <p>
+                تولت شركة الكوهجي للمقاولات أعمال البناء في هذا المشروع&nbsp;
+                بدءاً من&nbsp; وضع الركائز الرأسية حتى استكمال العمل، بما في ذلك
+                الاختبار والتشغيل التجريبي، وذلك خلال فترة 72 أسبوعاً لأكبر محل
+                لأيكيا في منطقة الخليج ويقع في سلماباد. يمتد المشروع على إجمالي
+                مساحة تجزئة تبلغ 37,000 متر مربع،&nbsp;
               </p>
+              <p></p>
             </div>
           </div>
         </div>
       </div>
-    </footer>
-    <!-- Bootstrap Bundle with Popper -->
-    <!-- <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script> -->
-    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
-    <!-- <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script> -->
-    <script src="../../assets/js/bootstrap.bundle.min.js"></script>
-    <script src="../../assets/plugins/slick/slick.min.js"></script>
-    <script src="../../assets/js/js.js"></script>
-            <!-- FOR ARABIC PAGE -->
+    </section>
+
+    <style>
+      .counter_sec {
+        direction: rtl;
+        text-align: right;
+      }
+      .counter {
+        margin: 0 10px;
+      }
+    </style>
+    <section class="counter_sec c_padd" style="background: #0066aa">
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <div class="counter_box">
+              <span
+                class="counter"
+                style="
+                  -webkit-text-fill-color: #0066aa;
+                  -webkit-text-stroke-color: #fff;
+                "
+              >
+                26 </span
+              ><span
+                class="suffix"
+                style="
+                  -webkit-text-fill-color: #0066aa;
+                  -webkit-text-stroke-color: #fff;
+                "
+              ></span>
+              <style>
+                #first_24:before {
+                  background-color: #fff;
+                }
+              </style>
+              <p id="first_24" style="color: #fff">مليون د.ب</p>
+            </div>
+          </div>
+          <div class="col second_count">
+            <div class="counter_box">
+              <span
+                class="counter"
+                style="
+                  -webkit-text-fill-color: #0066aa;
+                  -webkit-text-stroke-color: #fff;
+                "
+              >
+                1.8 </span
+              ><span
+                class="suffix"
+                style="
+                  -webkit-text-fill-color: #0066aa;
+                  -webkit-text-stroke-color: #fff;
+                "
+              ></span>
+              <style>
+                #second_24:before {
+                  background-color: #fff;
+                }
+              </style>
+              <p id="second_24" style="color: #fff">سنة لاستكمال المشروع</p>
+            </div>
+          </div>
+          <div class="col">
+            <div class="counter_box">
+              <span
+                class="counter"
+                style="
+                  -webkit-text-fill-color: #0066aa;
+                  -webkit-text-stroke-color: #fff;
+                "
+              >
+                37 </span
+              ><span
+                class="suffix"
+                style="
+                  -webkit-text-fill-color: #0066aa;
+                  -webkit-text-stroke-color: #fff;
+                "
+                >K</span
+              >
+              <style>
+                #third_24:before {
+                  background-color: #fff;
+                }
+              </style>
+              <p id="third_24" style="color: #fff">متر مربع مساحة التجزئة</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div id="common-footer"></div>
+    <script>
+      fetch("/ar/components/footer.html")
+        .then((r) => r.text())
+        .then((t) => {
+          const el = document.getElementById("common-footer");
+          if (el) el.outerHTML = t;
+        });
+    </script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <script src="/assets/js/bootstrap.bundle.min.js"></script>
+    <script src="/assets/plugins/slick/slick.min.js"></script>
+    <script src="/assets/js/js.js"></script>
+
     <div class="kh_languagear">
-        <a href="../../../index.html" class="flagen">English <span><img src="../../../assets/img/en-flag.jpg" class="img-fluid" alt=""></span></a>
+      <a href="../../../index" class="flagen"
+        >English
+        <span
+          ><img
+            src="/assets/img/en-flag.jpg"
+            class="img-fluid"
+            alt="" /></span
+      ></a>
     </div>
-    <!-- FOR ARABIC PAGE -->
-      </body>
+  </body>
 </html>
-    
-    
-    
