@@ -204,25 +204,10 @@
     </section>
 
     <script>
-      var page = window.location.pathname;
-      var banneriframe = document.getElementsByClassName("banneriframe");
-      var videoslides = document.getElementsByClassName("video_slides");
-      if (page == "../index.html") {
-        // -- do stuff
-        console.log("home page");
-      } else {
-        // -- do other stuff
-        console.log("other page");
-        // removing the video
-        document.querySelectorAll(".banneriframe").forEach(function (el) {
-          el.style.display = "none";
-        });
-        // removing the video_slides class
-        var elems = document.querySelectorAll(".slider_slides.video_slides");
-        [].forEach.call(elems, function (el) {
-          el.classList.remove("video_slides");
-        });
-      }
+      $(document).ready(function () {
+        $(".banneriframe").hide();
+        $(".slider_slides.video_slides").removeClass("video_slides");
+      });
     </script>
 
     <section class="welcome_sec home_padd" id="welcome">
