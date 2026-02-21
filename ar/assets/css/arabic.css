@@ -1,0 +1,578 @@
+@import url("../fonts/arabic/font-style.css");
+
+/* new font families
+    font-family: 'MyriadProRegular';
+	font-family: 'Heebo', sans-serif;
+    font-family: 'Merriweather', serif !important;
+	font-family: 'BrandoLight'!important;
+	font-family: 'BrandoRegular'!important;
+	font-family: 'BrandoSemiBold'!important;
+	font-family: 'GESSTwoBold'!important;
+	font-family: 'GESSTwoLight'!important;
+	font-family: 'GESSTwoMedium'!important;
+	font-family: 'gillsansmtprolight'!important;
+	font-family: 'HeeboRegular'!important;
+	font-family: 'MontserratExtraBold'!important;
+	font-family: 'MyriadProRegular'!important;
+	font-family: 'WhitneyLight'!important;
+	font-family: 'AdobeArabicRegular'!important;
+
+new font families*/
+
+nav.navbar.for_Ddesktop {
+    direction: rtl;
+}
+
+.mega_menu {
+    display: flex;
+    justify-content: space-between !important;
+    margin: auto;
+    width: 100%;
+}
+
+.mega_menu ul.social_nav {
+    margin-left: 0px;
+    direction: ltr;
+}
+
+ul.sub_menu_a {
+    margin-right: 30px;
+}
+
+ul.sub_submenu {
+    right: 200px;
+}
+
+ul.sub_sub_submenu {
+    right: 180px;
+}
+
+.navbar-nav .nav-link,
+.child_menu div.head h3,
+li.has_child .child_menu ul.sub_menu_a li a {
+    font-family: 'GESSTwoMedium' !important;
+    font-size: 16px;
+}
+
+.child_menu div.head h3 {
+    font-size: 35px;
+}
+
+.slide_title h2 p,
+.slide_title h2 span,
+.slide_title h2 {
+    font-family: 'GESSTwoMedium' !important;
+    font-size: 80px !important;
+    line-height: normal;
+    white-space: normal !important;
+    text-align: right;
+    direction: rtl;
+    display: block;
+}
+
+.slide_text p {
+    font-family: 'GESSTwoMedium' !important;
+    font-size: 30px !important;
+    line-height: normal;
+    white-space: normal !important;
+    text-align: right !important;
+    font-style: normal;
+    direction: rtl;
+}
+
+.pro_slide_text {
+    width: 100%;
+}
+
+.welcome_sec {
+    text-align: right;
+}
+
+h1.all_head,
+h2.all_head {
+    font-family: 'GESSTwoMedium' !important;
+    font-size: 30px !important;
+    line-height: normal;
+    display: block;
+    direction: rtl;
+}
+
+.welcome_sec p,
+.kh-certificate_thumb p,
+.kh_our_priority h4,
+.about_desc p {
+    font-family: 'GESSTwoMedium' !important;
+    line-height: normal;
+    direction: rtl;
+}
+
+.counter_box p {
+    font-family: 'GESSTwoMedium' !important;
+}
+
+.project_slider h2.all_head {
+    text-align: right;
+    display: block;
+}
+
+.pro_slide_text h3:before {
+    right: 0;
+}
+
+.pro_slide_text {
+    text-align: right;
+    direction: rtl;
+}
+
+.pro_slide_text h3,
+.pro_slide_text p,
+.pro_slide_text a {
+    font-family: 'GESSTwoMedium' !important;
+}
+
+.nav_text a {
+    text-align: right;
+    font-family: 'GESSTwoMedium' !important;
+}
+
+.our_client h2.all_head {
+    display: block;
+    font-family: 'GESSTwoMedium' !important;
+    text-align: right;
+}
+
+.blogs h2.all_head {
+    text-align: right;
+    display: block;
+}
+
+.project_more_de a.uni_btn {
+    font-family: 'GESSTwoMedium' !important;
+}
+
+.footer_sec {
+    direction: rtl;
+}
+
+ul.social_nav.footer_cocial {
+    direction: ltr;
+    justify-content: end;
+}
+
+.contact_detail.social,
+.contact_detail.subscribe {
+    padding: 0 55px 0 30px;
+}
+
+.contact_detail.social:before,
+.contact_detail.subscribe:before {
+    border-right: 2px solid #ffffff40;
+    border-left: 0px;
+    left: 0;
+}
+
+.contact_detail.address {
+    padding: 0px 0 0 36px;
+}
+
+.contact_detail p,
+.contact_detail a,
+.contact_detail form input::placeholder,
+.contact_detail h4,
+.people_head h3,
+.owner_says p,
+.tablinks h2,
+.tab_list li {
+    font-family: 'GESSTwoMedium' !important;
+}
+
+.kh_reli_team {
+    padding: 72px 0 100px;
+}
+
+.managing_dir,
+.people_head.junior_sec {
+    direction: rtl;
+}
+
+.owner_says {
+    text-align: right;
+}
+
+.about_kooheji h2.all_head {
+    text-align: right;
+    display: block;
+}
+
+.about_desc {
+    text-align: right;
+}
+
+.tab_icon {
+    text-align: right;
+}
+
+.tab_list li:before {
+    right: -14px;
+}
+
+.Pre_contract ul.tab_list {
+    padding: 14px 40px 35px 0;
+}
+
+.line_list {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.welcome_sec p {
+    margin-right: 0px;
+    text-align: right;
+    direction: rtl;
+}
+
+.counter_sec .counter_box span.suffix {
+    font-size: 80px;
+}
+
+.video_sec .pro_slide_text {
+    right: 0px;
+}
+
+.media_common .nav_text img {
+    width: 100%;
+    height: 218px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.accordion {
+    direction: rtl;
+}
+
+.accordion-button[aria-expanded="true"]:before,
+.accordion-button[aria-expanded="false"]:before {
+    background-position: left;
+    left: 12px;
+    width: 100%;
+    right: 0;
+}
+
+button.accordion-button {
+    font-family: 'GESSTwoLight' !important;
+}
+
+.accordion-body h5,
+.accordion-body p {
+    font-family: 'GESSTwoMedium' !important;
+}
+
+.our_team h2.all_head {
+    display: block;
+    direction: rtl;
+}
+
+.about_kooheji.project_design h2.all_head {
+    display: inline-block;
+}
+
+.about_kooheji.project_design .col-12.col-lg-6:first-child {
+    direction: rtl;
+}
+
+ul.sub_menu_a>li {
+    width: 42%;
+}
+
+.our_offices h2.all_head {
+    direction: rtl;
+    display: block;
+    text-align: right;
+}
+
+.slide_title h4 {
+    text-align: right;
+    direction: rtl;
+    font-family: 'GESSTwoLight' !important;
+}
+
+.slide_title h4 span {
+    font-family: 'GESSTwoMedium' !important;
+}
+
+li.has_child:nth-child(4) .child_menu {
+    padding-bottom: 220px;
+}
+
+.Post_contract .tablinks h2 {
+    margin: 0 10px;
+}
+
+.contact_detail.subscribe button.uni_btn {
+    font-family: 'GESSTwoMedium' !important;
+}
+
+/*.divi_sub_sub_menu {
+    padding-right: 15px;
+    width: 300px !important;
+}*/
+ul.sub_sub_submenu {
+    right: 210px;
+}
+
+/*.css-xta78q h2.wx-title.css-1mldljf {
+    font-family: 'GESSTwoLight'!important;
+    font-weight: 600!important;
+    font-size: 30px!important;
+}
+
+.css-1gcbz27 h2.wx-title.css-16i0d9t{
+    font-family: 'GESSTwoLight'!important;
+    font-weight: 600!important;
+    font-size: 30px!important;
+}*/
+
+p.form_head {
+    font-family: 'GESSTwoBold' !important;
+    text-align: right;
+    direction: rtl;
+}
+
+.kh_form input,
+.kh_form select,
+.kh_form textarea {
+    font-family: 'GESSTwoMedium' !important;
+    text-align: right;
+    direction: rtl;
+}
+
+.kh_form .form-select {
+    background-position: left 0.75rem center;
+}
+
+.kh_form button.uni_btn {
+    font-family: 'GESSTwoMedium' !important;
+    text-align: right;
+    direction: rtl;
+}
+
+.visit_sec p.form_head {
+    font-family: "Roboto", sans-serif !important;
+    text-align: left;
+    direction: ltr;
+}
+
+.kh_body_media_gallery .our_project:nth-child(1) .pro_slide_text h3:before {
+    background-color: #fff;
+}
+
+.kh_body_media_gallery .pro_slide_text h3:before {
+    background-color: transparent;
+}
+
+.reliable_team {
+    text-align: center;
+}
+
+.post_blog_slides .post_block h3 {
+    ;
+    font-family: 'GESSTwoMedium' !important;
+    direction: rtl;
+    text-align: right;
+}
+
+.post_block a.desc {
+    font-family: 'GESSTwoLight' !important;
+    direction: rtl;
+    text-align: right;
+}
+
+.post_blog_slides p.post_meta {
+    direction: rtl;
+}
+
+.custom_fileup .up_label {
+    right: auto;
+    left: 17px;
+}
+
+
+/*mobile menu CSS*/
+
+.menu_mobile_start {
+    direction: rtl;
+    text-align: right;
+}
+
+/*mobile Menu Css*/
+/*media queries*/
+
+@media (max-width: 991px) {
+    .slide_title {
+        padding: 0 15px 0 0px;
+    }
+
+    .contact_detail.subscribe,
+    .contact_detail.address,
+    .contact_detail.social {
+        padding: 0 10px 50px;
+        margin-bottom: 35px;
+        border-bottom: 1px solid #ffffff6b;
+    }
+
+    .contact_detail>a {
+        margin-right: 0px;
+        margin-left: 18px;
+    }
+
+    .pro_slide_text {
+        left: 0;
+    }
+
+    .more_news {
+        text-align: right;
+    }
+
+    .slide_title h2 p,
+    .slide_title h2 span,
+    .slide_title h2 {
+        font-size: 40px !important;
+    }
+
+    .slide_text p {
+        font-size: 30px !important;
+    }
+
+    .slide_text p {
+        margin: 10px 0px 0;
+    }
+
+    .counter_sec .counter_box span.suffix {
+        font-size: 36px !important;
+    }
+
+    .contact_detail.social {
+        margin: 0;
+        padding: 0 10px;
+        border: 0;
+    }
+
+    /*mobile menu CSS*/
+    .menu_mobile_start li.has_child:nth-child(4) .child_menu {
+        padding-bottom: 0px;
+    }
+
+    .menu_mobile_start ul.sub_menu_a>li {
+        width: 100%;
+    }
+
+    .menu_mobile_start .ul.sub_menu_a {
+        margin-right: 0px;
+    }
+
+    .menu_mobile_start ul.sub_submenu {
+        right: 15px;
+    }
+
+    .menu_mobile_start ul.sub_sub_submenu {
+        right: 23px;
+    }
+
+    .menu_mobile_start li.has_child>a:before {
+        margin-right: 10px;
+        margin-left: 0px;
+        right: 0;
+        left: auto;
+    }
+
+    .mega_menu ul.main_menu,
+    .mega_menu ul.social_nav {
+        margin-right: 12px;
+        margin-left: 0px;
+    }
+
+    .sidenav li.has_child {
+        padding-right: 20px;
+        padding-left: 0px;
+    }
+
+    /*.menu_mobile_start .navbar-nav .nav-link, .menu_mobile_start .child_menu div.head h3, .menu_mobile_start li.has_child .child_menu ul.sub_menu_a li a{*/
+    /*	font-size: 32px;*/
+    /*}*/
+    /*mobile menu CSS*/
+}
+
+@media (max-width: 767px) {
+
+    .contact_detail.subscribe,
+    .contact_detail.address,
+    .contact_detail.social {
+        padding: 0 10px 30px;
+        margin-bottom: 25px;
+    }
+
+    .slide_title h2 p,
+    .slide_title h2 span,
+    .slide_title h2 {
+        font-size: 25px !important;
+    }
+
+    .slide_text p {
+        font-size: 18px !important;
+    }
+}
+
+@media (max-width: 481px) {
+    .pro_slide_text {
+        left: 48px;
+    }
+
+    .project_slider h2.all_head {
+        margin-left: 0;
+        margin-right: 15px;
+    }
+
+    .blogs h2.all_head {
+        margin: 0 5px 0 0px;
+    }
+
+    /*.contact_detail.address {
+    	padding: 0px 36px 0 0px;
+	}*/
+}
+
+/*article page CSS direction right to left*/
+.kh_article_main,
+.article1 .row:nth-child(2) {
+    direction: rtl;
+}
+
+.article_str {
+    text-align: right;
+}
+
+.kh_archieve {
+    text-align: right;
+}
+
+.article_str h3,
+.kh_archieve h3,
+.healthcare.single_article_sec h4 {
+    font-family: 'GESSTwoMedium' !important;
+}
+
+.article_str p,
+.healthcare.single_article_sec p {
+    font-size: 18px;
+    font-family: 'GESSTwoMedium' !important;
+}
+
+.article_str a {
+    font-family: 'GESSTwoMedium' !important;
+    font-size: 18px;
+}
+
+.kh_archieve .kh_archieve_list li a {
+    font-size: 20px;
+    font-family: 'GESSTwoMedium' !important;
+}
